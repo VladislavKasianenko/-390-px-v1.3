@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Варфреймы MVP · 390 px · версия 1.2</title>
+<title>Варфреймы MVP · 390 px · версия 1.3</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Jost:wght@300;400;500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
@@ -179,8 +179,8 @@ body.no-an .an,body.no-an .mk{display:none}
 <header class="top">
   <div class="t-row">
     <div>
-      <p class="eyebrow">Luxury e-commerce · варфреймы по блок-схеме MVP · версия 1.2</p>
-      <h1>Варфреймы мобильного приложения <em>· 390 px</em> <span style="font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--brass);vertical-align:super">v1.2</span></h1>
+      <p class="eyebrow">Luxury e-commerce · варфреймы по блок-схеме MVP · версия 1.3</p>
+      <h1>Варфреймы мобильного приложения <em>· 390 px</em> <span style="font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--brass);vertical-align:super">v1.3</span></h1>
     </div>
     <div class="fx g6 center">
       <button class="pill" id="an" aria-pressed="true">аннотации</button>
@@ -199,7 +199,7 @@ body.no-an .an,body.no-an .mk{display:none}
   <span class="lg"><s></s>текстовый блок</span>
   <span class="lg"><s class="btn"></s>основное действие</span>
   <span class="lg"><s class="mk"></s>номер аннотации</span>
-  <span class="lg" style="color:var(--brass)">64 экрана · версия 1.2 · размеры, консультация до оплаты, голосовые, услуги</span>
+  <span class="lg" style="color:var(--brass)">59 экранов · версия 1.3 · правки по разбору экранов от команды</span>
 </div>
 
 <section class="zone" id="z-a">
@@ -221,14 +221,15 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Кинематографичная анимация логотипа. Параллельно — проверка версии ОС и сети.</li>
-      <li><b>Сессия активна</b> → сразу витрина. <b>Тайм-аут сессии</b> → быстрый вход по биометрии, экран 05. <b>Сессии нет</b> → экран 02. <b>Нет сети</b> → каркас витрины из кэша, экран 14.</li>
+      <li><b>Сессия активна</b> → сразу витрина. <b>Тайм-аут сессии</b> → быстрый вход по биометрии, экран 05. <b>Сессии нет</b> → экран 02. <b>Нет сети</b> → каркас витрины из кэша, экран 12.</li>
     </ol>
   </div>
 
   <div class="item">
     <p class="cap"><b>A · 02</b><span>Вход по номеру телефона</span><i>390 × 844</i></p>
     <div class="f">
-      <div class="scr"><div class="body pad" style="padding-top:70px">
+      <div class="scr"><div class="body pad" style="padding-top:20px">
+        <div class="fx between center" style="margin-bottom:40px"><div class="lb s"></div><div class="lb s" style="text-decoration:underline">Пропустить</div></div>
         <div class="lb h">Войдите<br>или зарегистрируйтесь</div>
         <div class="lb s" style="margin:14px 0 30px">Один шаг — и вы в каталоге. Пароли не нужны.</div>
         <div class="lb xs" style="margin-bottom:8px">Номер телефона</div>
@@ -243,7 +244,9 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:340px;top:470px">3</i>
     </div>
     <ol class="an">
-      <li>Телефон — основной идентификатор: по нему профиль склеивается с RetailCRM и программой лояльности.</li>
+      <li><b>«Пропустить» в правом верхнем углу:</b> экран показывается при первом входе, после пропуска больше не появляется автоматически.</li>
+      <li>Авторизацию предлагаем позже — при действии, которое требует аккаунта: вишлист, оформление заказа, профиль.</li>
+      <li>Телефон — основной идентификатор: по нему профиль склеивается с RetailCRM.</li>
       <li>Имя и e-mail здесь не запрашиваются — они собираются на Checkout для электронного чека.</li>
       <li>Номер связывает приложение с офлайн-покупками: история и закреплённый менеджер подтягиваются из RetailCRM.</li>
       <li class="q">Быстрый вход через Apple ID и Google Sign-In исключён по решению заказчика, хотя во вводных он значился обязательным. Единственный способ входа на MVP — телефон и SMS; изменение стоит зафиксировать в документации.</li>
@@ -262,26 +265,60 @@ body.no-an .an,body.no-an .mk{display:none}
           <div class="inp" style="flex:1;justify-content:center"></div>
           <div class="inp" style="flex:1;justify-content:center"></div>
         </div>
-        <div class="lb s">Отправить код повторно через 0:42</div>
-        <div class="div" style="margin:28px 0"></div>
+        <div class="lb s">Отправить код повторно через 0:42 · осталось 2 попытки</div>
+        <div class="div" style="margin:24px 0"></div>
+        <div class="btn gh sm">СВЯЗАТЬСЯ С ПОДДЕРЖКОЙ</div>
+        <div class="lb s" style="font-size:10.5px;margin-top:10px;line-height:1.5">Откроется чат, номер телефона подставится автоматически</div>
+        <div class="div" style="margin:24px 0"></div>
         <div class="card" style="border-color:var(--bordeaux);background:rgba(140,34,51,.05)">
-          <div class="lb s red" style="font-size:11.5px">Состояние ошибки: неверный код, лимит SMS, номер уже привязан</div>
+          <div class="lb s red" style="font-size:11.5px">Состояние ошибки: неверный код, исчерпан лимит отправок</div>
         </div>
       </div></div>
-      <i class="mk" style="left:340px;top:250px">1</i>
+      <i class="mk" style="left:340px;top:222px">1</i>
       <i class="mk" style="left:340px;top:330px">2</i>
       <i class="mk" style="left:340px;top:470px">3</i>
     </div>
     <ol class="an">
-      <li>Автоподстановка кода из SMS, переход дальше без нажатия кнопки.</li>
-      <li>Таймер повторной отправки. После трёх попыток — пауза и подсказка «связаться с поддержкой».</li>
+      <li>Ручной ввод кода плюс системная автоподстановка там, где её поддерживает ОС: на iOS работает штатно, на Android — не на всех устройствах и требует разрешения на чтение SMS.</li>
+      <li>Таймер повторной отправки защищает от спама, <b>не более трёх повторных отправок</b>. «Изменить» возвращает на предыдущий экран.</li>
+      <li>«Связаться с поддержкой» открывает чат и передаёт введённый номер телефона.</li>
       <li class="q">Состояния ошибок в ТЗ и ответах не описаны: неверный код, исчерпан лимит SMS, номер уже привязан к другому профилю. Нужно согласовать тексты и поведение.</li>
       <li>Успешный ввод ведёт сразу на витрину, без промежуточных экранов.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>A · 04</b><span>Предложение включить биометрию</span><i>модальный лист</i></p>
+    <p class="cap"><b>A · 04</b><span>Создание кода приложения</span><i>390 × 844</i></p>
+    <div class="f">
+      <div class="scr"><div class="body pad" style="padding-top:70px">
+        <div class="lb h">Придумайте код</div>
+        <div class="lb s" style="margin:14px 0 30px">Он защитит заказы и профиль, если телефон окажется в чужих руках</div>
+        <div class="fx g10" style="margin-bottom:22px">
+          <div class="inp on" style="flex:1;justify-content:center;font-size:20px">•</div>
+          <div class="inp on" style="flex:1;justify-content:center;font-size:20px">•</div>
+          <div class="inp on" style="flex:1;justify-content:center;font-size:20px">•</div>
+          <div class="inp" style="flex:1;justify-content:center"></div>
+          <div class="inp" style="flex:1;justify-content:center"></div>
+          <div class="inp" style="flex:1;justify-content:center"></div>
+        </div>
+        <div class="lb s" style="font-size:10.5px">От 4 до 6 цифр</div>
+        <div class="div" style="margin:28px 0 18px"></div>
+        <div class="lb s" style="font-size:11px;line-height:1.5">Дальше предложим включить Face ID или Touch ID — код останется запасным способом входа.</div>
+      </div></div>
+      <i class="mk" style="left:340px;top:250px">1</i>
+      <i class="mk" style="left:340px;top:390px">2</i>
+      <i class="mk" style="left:340px;top:560px">3</i>
+    </div>
+    <ol class="an">
+      <li>Создание кода приложения идёт сразу после первичной авторизации — по требованию разбора экранов.</li>
+      <li>Длина 4–6 символов, второй шаг — подтверждение кода повторным вводом.</li>
+      <li>Код и биометрия связаны: код задаётся первым и работает как запасной путь, если биометрия недоступна.</li>
+      <li class="q">Не описано, можно ли пропустить создание кода и что происходит при его утере. Нужны решения по обоим сценариям.</li>
+    </ol>
+  </div>
+
+  <div class="item">
+    <p class="cap"><b>A · 05</b><span>Предложение включить биометрию</span><i>модальный лист</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="hdr"><div class="logo">УФФИЦИ</div><div class="ic"><i></i><i class="dot"></i><i class="sq cnt"></i></div></div>
@@ -300,132 +337,43 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:342px;top:790px">3</i>
     </div>
     <ol class="an">
-      <li>Показывается один раз, сразу после первого успешного входа — до того, как клиент столкнётся с повторной авторизацией.</li>
-      <li>Вместе с биометрией предлагается задать код-пароль: он нужен как запасной путь, если биометрия не сработает.</li>
+      <li>Показывается сразу после создания кода приложения: биометрия — быстрый способ входа, код остаётся основным.</li>
+      <li>На Android вместо Face ID предлагается системная биометрия устройства — Touch ID или аналог вендора.</li>
       <li>«Не сейчас» не блокирует ничего и не повторяется в этой сессии. Включить биометрию позже можно в настройках профиля.</li>
       <li class="q">Не зафиксировано, где именно показывать предложение: сразу после регистрации или после первой покупки, когда ценность защиты понятнее.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>A · 05</b><span>Повторный вход · биометрия</span><i>390 × 844</i></p>
+    <p class="cap"><b>A · 06</b><span>Вход в приложение · код или биометрия</span><i>390 × 844</i></p>
     <div class="f">
-      <div class="scr"><div class="body">
-        <div class="hdr"><div class="logo">УФФИЦИ</div><div class="ic"><i></i><i class="dot"></i><i class="sq cnt"></i></div></div>
-        <div class="pad grid2" style="opacity:.5"><div><div class="ph r34"></div><div class="t w60"></div></div><div><div class="ph r34"></div><div class="t w40"></div></div></div>
-        <div class="dim"></div>
-        <div class="sheet" style="text-align:center">
-          <div style="width:44px;height:44px;border:1.6px solid var(--ink);border-radius:9px;margin:6px auto 14px"></div>
-          <div class="lb b" style="font-size:15px">Войдите по Face ID</div>
-          <div class="lb s" style="margin:8px 0 20px">Подтвердите вход, чтобы открыть заказы, профиль и оплату</div>
-          <div class="btn">ИСПОЛЬЗОВАТЬ FACE ID</div>
-          <div class="btn gh" style="border:0;margin-top:6px">Ввести код-пароль</div>
-          <div class="btn gh" style="border:0;margin-top:2px">Войти по SMS-коду</div>
+      <div class="scr"><div class="body pad fx col" style="padding-top:90px;align-items:center">
+        <div class="lb h" style="font-size:24px;letter-spacing:.2em">УФФИЦИ</div>
+        <div class="lb s" style="margin:12px 0 40px">Введите код приложения</div>
+        <div class="fx g10" style="margin-bottom:30px">
+          <div class="inp on" style="width:44px;justify-content:center;font-size:20px">•</div>
+          <div class="inp on" style="width:44px;justify-content:center;font-size:20px">•</div>
+          <div class="inp" style="width:44px;justify-content:center"></div>
+          <div class="inp" style="width:44px;justify-content:center"></div>
         </div>
-      </div></div>
-      <i class="mk" style="left:342px;top:560px">1</i>
-      <i class="mk" style="left:18px;top:706px">2</i>
-    </div>
-    <ol class="an">
-      <li>Биометрия запрашивается только после тайм-аута сессии, а не при каждом открытии приложения. Повторное прохождение SMS-регистрации не требуется.</li>
-      <li>Каталог за модалкой остаётся видимым: просмотр витрины не требует авторизации, закрыты заказы, профиль и оплата.</li>
-      <li>Face ID на iOS, Touch ID и биометрия платформы на поддерживаемых Android. Два запасных пути всегда рядом: код-пароль и SMS.</li>
-      <li class="q">Длительность сессии не зафиксирована — от неё зависит, как часто клиент вообще видит этот экран.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>A · 06</b><span>Биометрия не сработала · запасной путь</span><i>модальный лист</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="hdr"><div class="logo">УФФИЦИ</div><div class="ic"><i></i><i class="dot"></i><i class="sq cnt"></i></div></div>
-        <div class="pad grid2" style="opacity:.5"><div><div class="ph r34"></div><div class="t w60"></div></div><div><div class="ph r34"></div><div class="t w40"></div></div></div>
-        <div class="dim"></div>
-        <div class="sheet" style="text-align:center">
-          <div class="lb b" style="font-size:15px">Не удалось распознать</div>
-          <div class="lb s" style="margin:8px 0 6px">Попытка 2 из 3</div>
-          <div class="lb s" style="margin-bottom:20px">Попробуйте снова или войдите другим способом</div>
-          <div class="btn">ПОПРОБОВАТЬ СНОВА</div>
-          <div class="btn gh" style="margin-top:8px">ВВЕСТИ КОД-ПАРОЛЬ</div>
-          <div class="btn gh" style="border:0;margin-top:2px">Войти по SMS-коду</div>
-        </div>
-      </div></div>
-      <i class="mk" style="left:342px;top:470px">1</i>
-      <i class="mk" style="left:342px;top:600px">2</i>
-      <i class="mk" style="left:342px;top:790px">3</i>
-    </div>
-    <ol class="an">
-      <li>Счётчик попыток виден клиенту: после третьей неудачи биометрия отключается до следующего успешного входа другим способом.</li>
-      <li>Тот же экран используется, когда биометрия на устройстве не настроена или отключена в системе — тогда предложение «попробовать снова» скрывается.</li>
-      <li>SMS остаётся конечным запасным путём: он работает всегда, независимо от устройства.</li>
-      <li class="q">Число попыток и поведение после блокировки нужно согласовать — на встрече эта часть не фиксировалась.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>A · 07</b><span>Код-пароль</span><i>390 × 844 · предложение</i></p>
-    <div class="f">
-      <div class="scr"><div class="body pad" style="padding-top:70px">
-        <div class="lb h">Введите код-пароль</div>
-        <div class="lb s" style="margin:14px 0 34px">Четыре цифры, которые вы задали при включении быстрого входа</div>
-        <div class="fx g10" style="margin-bottom:26px">
-          <div class="inp on" style="flex:1;justify-content:center;font-size:20px">•</div>
-          <div class="inp on" style="flex:1;justify-content:center;font-size:20px">•</div>
-          <div class="inp" style="flex:1;justify-content:center"></div>
-          <div class="inp" style="flex:1;justify-content:center"></div>
-        </div>
-        <div class="lb s" style="text-decoration:underline">Забыли код-пароль?</div>
-        <div class="div" style="margin:28px 0"></div>
-        <div class="lb s" style="font-size:11px;line-height:1.5">Код-пароль работает как замена биометрии: например, когда Face ID недоступен или устройством пользуется кто-то ещё.</div>
+        <div style="width:52px;height:52px;border:1.6px solid var(--ink);border-radius:11px;margin-bottom:14px"></div>
+        <div class="lb s" style="text-decoration:underline">Войти по Face ID</div>
+        <div class="lb s" style="margin-top:30px;text-decoration:underline">Не помню код</div>
       </div></div>
       <i class="mk" style="left:340px;top:250px">1</i>
-      <i class="mk" style="left:340px;top:400px">2</i>
-      <i class="mk" style="left:340px;top:470px">3</i>
-    </div>
-    <ol class="an">
-      <li class="q">Экран нарисован как предложение: механика кода-пароля на встрече поднималась, но не была зафиксирована. Нужны решения по длине кода, числу попыток и блокировке.</li>
-      <li>Установка кода происходит один раз — вместе с включением биометрии на экране 04.</li>
-      <li>«Забыли код-пароль?» ведёт на восстановление доступа, экран 08.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>A · 08</b><span>Восстановление доступа</span><i>390 × 844 · предложение</i></p>
-    <div class="f">
-      <div class="scr"><div class="body pad" style="padding-top:70px">
-        <div class="lb h">Не получается войти</div>
-        <div class="lb s" style="margin:14px 0 28px">Выберите, что подходит вашей ситуации</div>
-        <div class="card" style="border-color:var(--ink);margin-bottom:10px">
-          <div class="lb b" style="font-size:13px">Прислать код повторно</div>
-          <div class="lb s" style="margin-top:6px">На +7 (912) ••• 67-89</div>
-        </div>
-        <div class="card" style="margin-bottom:10px">
-          <div class="lb b" style="font-size:13px">Сбросить код-пароль</div>
-          <div class="lb s" style="margin-top:6px">Подтвердим номер по SMS и зададим новый</div>
-        </div>
-        <div class="card" style="margin-bottom:10px">
-          <div class="lb b" style="font-size:13px">Нет доступа к номеру</div>
-          <div class="lb s" style="margin-top:6px">Напишем менеджеру — он подтвердит вас по истории покупок</div>
-        </div>
-        <div class="card">
-          <div class="lb b" style="font-size:13px">Изменить номер телефона</div>
-          <div class="lb s" style="margin-top:6px">Через подтверждение личности</div>
-        </div>
-      </div></div>
-      <i class="mk" style="left:340px;top:300px">1</i>
-      <i class="mk" style="left:340px;top:490px">2</i>
+      <i class="mk" style="left:340px;top:420px">2</i>
       <i class="mk" style="left:340px;top:600px">3</i>
     </div>
     <ol class="an">
-      <li class="q">Весь экран — предложение к обсуждению: окончательная механика восстановления на встрече не была зафиксирована. Показываем варианты, чтобы получить решение по каждому.</li>
-      <li>Сброс кода-пароля через SMS — самый простой путь, он не требует участия сотрудников.</li>
-      <li>Потеря доступа к номеру — единственный сценарий, где нужен человек: телефон является идентификатором профиля в CRM, автоматически подтвердить личность нечем.</li>
-      <li class="q">Смена номера отдельно не описана в ТЗ: нужно решить, что происходит с историей заказов и закреплённым менеджером.</li>
+      <li>Показывается перед главным экраном при каждом входе в приложение, если код задан и биометрия настроена.</li>
+      <li>Биометрия — быстрый путь, код — основной и всегда доступный. На Android вместо Face ID системная биометрия устройства.</li>
+      <li>Если биометрия не настроена или не сработала, экран остаётся тем же — просто без кнопки биометрии.</li>
+      <li class="q">«Не помню код» — сценарий восстановления не описан в разборе. Вероятный путь: повторная авторизация по SMS и задание нового кода.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>A · 09</b><span>Контекстный сбор данных</span><i>модальный лист</i></p>
+    <p class="cap"><b>A · 07</b><span>Контекстный сбор данных</span><i>модальный лист</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="hdr"><div class="logo">УФФИЦИ</div><div class="ic"><i></i><i class="dot"></i><i class="sq cnt"></i></div></div>
@@ -434,10 +382,11 @@ body.no-an .an,body.no-an .mk{display:none}
         <div class="dim"></div>
         <div class="sheet">
           <div class="lb h2">Подскажем ваш размер</div>
-          <div class="lb s" style="margin:8px 0 16px">Укажите размер обуви, чтобы скрыть из выдачи то, чего нет в наличии</div>
-          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:16px">
-            <div class="chip">39</div><div class="chip">40</div><div class="chip on">41</div><div class="chip">42</div><div class="chip">43</div><div class="chip">44</div>
+          <div class="lb s" style="margin:8px 0 16px">Отметьте все размеры, которые вам подходят, — покажем только то, что есть в наличии</div>
+          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:10px">
+            <div class="chip">39</div><div class="chip">40</div><div class="chip on">41</div><div class="chip on">42</div><div class="chip on">43</div><div class="chip">44</div>
           </div>
+          <div class="lb s" style="font-size:10.5px;margin-bottom:16px">Выбрано три размера — можно отметить несколько</div>
           <div class="fx g6 center" style="margin-bottom:16px"><div class="chip on">EU</div><div class="chip">US</div><div class="chip">UK</div></div>
           <div class="btn">СОХРАНИТЬ В ПРОФИЛЬ</div>
           <div class="btn gh" style="border:0;margin-top:4px">Не сейчас</div>
@@ -448,9 +397,11 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:342px;top:790px">3</i>
     </div>
     <ol class="an">
-      <li>Заменяет стартовую анкету: вопрос возникает в момент потребности — при первом входе в «Обувь».</li>
+      <li>Показывается <b>только авторизованному пользователю</b> и только в момент потребности — при первом входе в «Обувь».</li>
       <li>Один вопрос — одно поле. Системы US / EU / UK переключаются здесь же, конвертация автоматическая.</li>
-      <li>«Не сейчас» не блокирует контент и не повторяется в этой сессии. Ответ сохраняется в раздел «Мои размеры».</li>
+      <li><b>Можно выбрать несколько размеров сразу</b> — например 41, 42 и 43. Одним размером выбор не ограничиваем.</li>
+      <li>После пропуска экран появляется снова через 3–5 входов, чтобы не надоедать. Если размер уже указан в другом месте, экран не показывается вообще.</li>
+      <li class="q">Автоматическое сопоставление размера по брендам и персональные size-рекомендации из MVP исключены — это развитие после появления корректных размерных данных. Соответствующие экраны версии 1.2 удалены.</li>
     </ol>
   </div>
 
@@ -463,10 +414,11 @@ body.no-an .an,body.no-an .mk{display:none}
 <div class="wall">
 
   <div class="item">
-    <p class="cap"><b>B · 10</b><span>Главная · витрина</span><i>прокручивается</i></p>
+    <p class="cap"><b>B · 08</b><span>Главная · витрина</span><i>прокручивается</i></p>
     <div class="f xl" data-tab="home">
       <div class="scr"><div class="body">
         <div class="hdr"><div class="logo">УФФИЦИ</div><div class="ic"><i></i><i class="dot"></i><i class="sq cnt"></i></div></div>
+        <div class="pad pb"><div class="fx g6"><div class="chip on">Женское</div><div class="chip">Мужское</div></div></div>
         <div class="hs pad pb">
           <div style="text-align:center;width:58px;flex:none"><div class="ph r11" style="border-radius:50%"></div><div class="lb s" style="font-size:9.5px;margin-top:5px">Новинки</div></div>
           <div style="text-align:center;width:58px;flex:none"><div class="ph r11" style="border-radius:50%"></div><div class="lb s" style="font-size:9.5px;margin-top:5px">Одежда</div></div>
@@ -501,20 +453,22 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:186px;top:1092px">6</i>
     </div>
     <ol class="an">
+      <li><b>Переключатель «Женское / Мужское»</b> в верхней части: выбранный гендер влияет на всю товарную и контентную выдачу.</li>
       <li>Header: логотип, поиск, профиль с индикатором уведомлений, корзина со счётчиком. Переключателя валют нет — все цены в рублях.</li>
       <li>Быстрая навигация — карусель разделов и подборок, а не уровней каталога: Новинки, подборки по критериям, Бренды, Sale, закрытые предложения, Услуги.</li>
       <li>Editorial Edits — крупный медиаблок во всю ширину, журнальная подача без карточной рамки.</li>
       <li>«Для вас» — <b>rule-based подборка без ИИ</b>: просмотренные категории, просмотренные товары, покупки и указанные предпочтения. Цены округлены вверх.</li>
       <li>Brand Spotlight — новинки брендов из профиля и вишлиста.</li>
       <li>Tab Bar: «Главная», «Гардеробная», «Вишлист».</li>
-      <li class="q">Минимальный набор правил для «Для вас» должен зафиксировать аналитик: приоритет сигналов, глубина истории, число позиций. Без этого дизайн опирается на несуществующую логику.</li>
-      <li class="q">Не описано состояние для нового пользователя без истории: чем наполняется блок — новинками, редакционной подборкой или он скрывается до первых просмотров.</li>
+      <li><b>Источники данных:</b> товарные категории и товары — из системы клиента; «Для вас» и «Ваши бренды» — управляемые подборки и признаки на стороне клиента, чтобы Uffizi сам задавал продвигаемые позиции; медиалента, статьи и лукбуки — из нашей CMS.</li>
+      <li class="q">Для новых пользователей без истории нужно дефолтное наполнение обоих блоков — вариант экрана требуется отрисовать после решения, чем их наполнять.</li>
+      
       <li>Состав карусели уточнён: иерархии каталога не будет, поэтому пункты ведут в фильтрованные листинги и подборки.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>B · 11</b><span>Поиск</span><i>390 × 844</i></p>
+    <p class="cap"><b>B · 09</b><span>Поиск</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx g10 center" style="padding-top:8px;padding-bottom:14px">
@@ -537,13 +491,47 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Поиск открывается из Header на любом экране каталога и медиа, клавиатура вызывается сразу.</li>
-      <li>История запросов и подсказки. Выдача открывается обычным листингом с доступом к фильтрам.</li>
-      <li class="q">Пустая выдача — состояние не описано в ТЗ: нужен текст и альтернативы вместо «ничего не найдено».</li>
+      <li>Последние 3–5 запросов: тап подставляет запрос в строку и сразу выполняет поиск.</li>
+      <li>Поиск полнотекстовый по товарным полям: сначала точные совпадения, затем позиции по отдельным словам запроса.</li>
+      <li>Пустая выдача — отдельный экран с консьерж-запросом и подборкой.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>B · 12</b><span>Фильтры</span><i>390 × 844</i></p>
+    <p class="cap"><b>B · 10</b><span>Поиск · ничего не найдено</span><i>390 × 844</i></p>
+    <div class="f">
+      <div class="scr"><div class="body">
+        <div class="pad fx g10 center" style="padding-top:8px;padding-bottom:14px">
+          <div class="inp on" style="flex:1">пальто Brioni кашемир</div>
+          <div class="lb s">Отмена</div>
+        </div>
+        <div class="pad">
+          <div class="card" style="margin-bottom:18px">
+            <div class="lb b" style="font-size:13px">Ничего не нашлось</div>
+            <div class="lb s" style="margin:8px 0 14px;line-height:1.5">По этому запросу подходящих вещей сейчас нет. Менеджер может найти позицию в бутиках и архиве.</div>
+            <div class="btn gh sm">ЗАПРОСИТЬ У КОНСЬЕРЖА</div>
+          </div>
+          <div class="lb xs" style="margin-bottom:10px">Возможно, вам подойдёт</div>
+          <div class="grid2">
+            <div><div class="ph r34"></div><div class="lb s" style="margin-top:8px">BRIONI</div><div class="price">368 500 ₽</div></div>
+            <div><div class="ph r34"></div><div class="lb s" style="margin-top:8px">LORO PIANA</div><div class="price">432 000 ₽</div></div>
+          </div>
+        </div>
+      </div></div>
+      <i class="mk" style="left:348px;top:180px">1</i>
+      <i class="mk" style="left:348px;top:300px">2</i>
+      <i class="mk" style="left:348px;top:430px">3</i>
+    </div>
+    <ol class="an">
+      <li>Понятное сообщение вместо пустого экрана — прямое требование разбора.</li>
+      <li>Кнопка консьержа ведёт в чат с подставленным запросом: это одна из трёх точек входа в чат.</li>
+      <li>Ниже — подборка «Для вас» с главного экрана. Уточнено в комментариях к документу.</li>
+      <li>Поиск полнотекстовый: сначала точные совпадения, затем позиции по отдельным словам запроса. Коррекция опечаток и AI-поиск в MVP не делаются.</li>
+    </ol>
+  </div>
+
+  <div class="item">
+    <p class="cap"><b>B · 11</b><span>Фильтры</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px">
@@ -580,14 +568,15 @@ body.no-an .an,body.no-an .mk{display:none}
       <li>Многоуровневая логика по референсу Farfetch: часто используемые параметры раскрыты, остальные — вложенными списками.</li>
       <li>Размеры, которых нет в наличии, показываются приглушёнными, а не скрываются.</li>
       <li>Счётчик на кнопке пересчитывается динамически при каждом изменении фильтра.</li>
-      <li>Фильтры несут основную навигационную нагрузку: иерархии каталога нет, поэтому этот экран — главный инструмент поиска вещи.</li>
-      <li>Чип «Мои размеры» учитывает индивидуальные размеры по брендам: в выдаче остаются вещи в том размере, который клиент носит именно у этого дома.</li>
+      <li>Фильтры работают в каталоге и товарных разделах. Внутрь текстового поиска их отдельно не добавляем.</li>
+      <li>Иерархии каталога нет, поэтому фильтры несут основную навигационную нагрузку.</li>
+      <li>Чип «Мои размеры» использует все размеры, отмеченные клиентом в профиле, — без привязки к бренду.</li>
       <li class="q">Состав полей под подтверждением до аудита Swagger. Согласовываем структуру и поведение, а не финальный список параметров.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>B · 13</b><span>Сортировка</span><i>модальный лист</i></p>
+    <p class="cap"><b>B · 12</b><span>Сортировка</span><i>модальный лист</i></p>
     <div class="f short">
       <div class="scr"><div class="body">
         <div class="pad grid2" style="padding-top:14px;opacity:.5"><div><div class="ph r34"></div></div><div><div class="ph r34"></div></div></div>
@@ -604,52 +593,12 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Сортировка вынесена отдельным листом от фильтров: выбор применяется сразу, без кнопки подтверждения.</li>
-      <li>Выбранный порядок сохраняется в рамках сессии просмотра категории.</li>
+      <li>Доступна на любом экране со списком товаров: каталог, подборки, бренд, Sale, результаты поиска.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>B · 14</b><span>Офлайн-режим</span><i>390 × 844</i></p>
-    <div class="f" data-tab="home">
-      <div class="scr"><div class="body">
-        <div class="hdr"><div class="logo">УФФИЦИ</div><div class="ic"><i></i><i class="dot"></i><i class="sq cnt"></i></div></div>
-        <div style="background:var(--paper-2);padding:9px 18px" class="fx between center">
-          <div class="lb s" style="font-size:11px">Офлайн-режим · показываем сохранённое</div>
-          <div class="lb s" style="font-size:11px;text-decoration:underline">Обновить</div>
-        </div>
-        <div class="pad pt">
-          <div class="lb xs" style="margin-bottom:10px">Вы смотрели</div>
-          <div class="grid2">
-            <div><div class="ph r34"></div><div class="lb s" style="margin-top:7px">BRIONI</div><div class="price">368 500 ₽</div></div>
-            <div><div class="ph r34"></div><div class="lb s" style="margin-top:7px">ZEGNA</div><div class="price">189 000 ₽</div></div>
-            <div><div class="ph r34"></div><div class="lb s" style="margin-top:7px">CUCINELLI</div><div class="price">214 000 ₽</div></div>
-            <div><div class="ph r34"></div><div class="lb s" style="margin-top:7px">LORO PIANA</div><div class="price">432 000 ₽</div></div>
-          </div>
-        </div>
-        <div class="sticky"><div class="btn off">В КОРЗИНУ — НУЖНА СЕТЬ</div></div>
-      </div></div>
-      <i class="mk" style="left:348px;top:142px">1</i>
-      <i class="mk" style="left:348px;top:214px">2</i>
-      <i class="mk" style="left:186px;top:772px">3</i>
-    </div>
-    <ol class="an">
-      <li>Вместо ошибки загрузки — спокойная сноска «Офлайн-режим» и кнопка обновления.</li>
-      <li>Из кэша доступны последние 50 единиц контента, вишлист и история просмотренных товаров.</li>
-      <li>Действия покупки, оплаты и чата выключены и объясняют причину, а не молча не срабатывают.</li>
-      <li class="q">Виртуальная гардеробная тоже должна быть офлайн, но модуль выходит в 2.0 — на MVP её в кэше нет.</li>
-    </ol>
-  </div>
-
-</div>
-
-<section class="zone" id="z-c">
-  <h2>C · Каталог и медиа</h2>
-  <p class="zn">Витрина, бренды, Sale и редакционная лента. Цены только в рублях и всегда округлены вверх — до сотен или пятисоток, правило нужно зафиксировать.</p>
-</section>
-<div class="wall">
-
-  <div class="item">
-    <p class="cap"><b>C · 15</b><span>Каталог · листинг</span><i>прокручивается</i></p>
+    <p class="cap"><b>C · 13</b><span>Каталог · листинг</span><i>прокручивается</i></p>
     <div class="f xl" data-tab="home">
       <div class="scr"><div class="body">
         <div class="hdr"><div class="logo" style="font-size:14px">‹ &nbsp;Одежда</div><div class="ic"><i></i><i class="sq cnt"></i></div></div>
@@ -695,17 +644,18 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Метка «Осталось 2» появляется при остатке менее трёх штук. Остатки приходят из кастомной системы заказчика в реальном времени.</li>
-      <li>Чип «Ваш размер» использует размеры из профиля и скрывает недоступные позиции. Счётчик на кнопке фильтров — на экране 12.</li>
+      <li>Чип «Ваш размер» использует размеры из профиля и скрывает недоступные позиции. Счётчик на кнопке фильтров — на экране 11.</li>
       <li>Модульная сетка с «воздухом»: две колонки, вертикальные фото 3:4, минимум подписей. Видео на превью — автоплей без звука. Целевое время открытия экрана — не дольше 1,5 с на 4G/LTE.</li>
       <li>Цены округлены вверх: 368 470 ₽ показывается как 368 500 ₽.</li>
       <li class="q">Правило округления задано двумя вариантами — до сотен и до пятисоток. Нужно выбрать одно.</li>
-      <li><b>Иерархии каталога не будет.</b> По решению клиента навигация строится не деревом «категория → подкатегория → тип», а набором фильтров и отдельными подборками по критериям, экран 16.</li>
+      <li><b>Иерархии каталога не будет:</b> навигация строится фильтрами и подборками.</li>
+      <li>Точки входа в каталог: категории главной, поиск, применение фильтров, отдельные товарные подборки.</li>
       <li class="q">Состав фильтров всё ещё под подтверждением: какие поля реально приходят из кастомной системы, покажет аудит Swagger.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 16</b><span>Подборка по критериям</span><i>прокручивается</i></p>
+    <p class="cap"><b>C · 14</b><span>Подборка по критериям</span><i>прокручивается</i></p>
     <div class="f" style="height:1040px" data-tab="home">
       <div class="scr"><div class="body">
         <div class="ph r43">
@@ -742,7 +692,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 17</b><span>Бренды</span><i>390 × 844</i></p>
+    <p class="cap"><b>C · 15</b><span>Бренды</span><i>390 × 844</i></p>
     <div class="f" data-tab="home">
       <div class="scr"><div class="body">
         <div class="hdr"><div class="logo" style="font-size:14px">‹ &nbsp;Бренды</div><div class="ic"><i></i><i class="sq cnt"></i></div></div>
@@ -769,7 +719,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 18</b><span>Sale · общие предложения</span><i>390 × 844</i></p>
+    <p class="cap"><b>C · 16</b><span>Sale · общие предложения</span><i>390 × 844</i></p>
     <div class="f" data-tab="home">
       <div class="scr"><div class="body">
         <div class="hdr"><div class="logo" style="font-size:14px">‹ &nbsp;Sale</div><div class="ic"><i></i><i class="sq cnt"></i></div></div>
@@ -796,12 +746,12 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Сдержанная подача: красная новая цена рядом с зачёркнутой старой. Залитых плашек, процентов на всю карточку, миганий и таймеров нет.</li>
-      <li>Раздел разделён на две ветки: общие предложения открыты всем, закрытые — по подписке. Вход в закрытую часть — карточкой сразу под заголовком, экраны 19–22.</li>
+      <li>Раздел разделён на две ветки: общие предложения открыты всем, закрытые — по подписке. Вход в закрытую часть — карточкой сразу под заголовком, экраны 17–20.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 19</b><span>Закрытые предложения · без доступа</span><i>390 × 844</i></p>
+    <p class="cap"><b>C · 17</b><span>Закрытые предложения · без доступа</span><i>390 × 844</i></p>
     <div class="f" data-tab="home">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Закрытые предложения</div><div class="lb s"></div></div>
@@ -828,12 +778,12 @@ body.no-an .an,body.no-an .mk{display:none}
       <li>Раздел виден всем, но закрыт: так он работает как механика привлечения, а не как невидимая функция.</li>
       <li>Показываем товары и обычную цену, скрываем только специальную — клиент понимает, что именно получит.</li>
       <li class="q">Альтернатива — полностью скрывать раздел от неучастников. Решение зависит от бизнес-модели: платная подписка, бесплатная или временно бесплатная как привлечение.</li>
-      <li>Кнопка ведёт на оформление подписки, экран 20.</li>
+      <li>Кнопка ведёт на оформление подписки, экран 18.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 20</b><span>Подписка · условия и оплата</span><i>390 × 844</i></p>
+    <p class="cap"><b>C · 18</b><span>Подписка · условия и оплата</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Доступ к закрытым предложениям</div><div class="lb s"></div></div>
@@ -866,7 +816,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 21</b><span>Доступ открыт</span><i>390 × 844</i></p>
+    <p class="cap"><b>C · 19</b><span>Доступ открыт</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body pad" style="padding-top:70px">
         <div style="width:46px;height:46px;border:1.5px solid var(--ink);border-radius:50%;margin-bottom:22px"></div>
@@ -889,7 +839,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 22</b><span>Закрытые предложения · витрина</span><i>390 × 844</i></p>
+    <p class="cap"><b>C · 20</b><span>Закрытые предложения · витрина</span><i>390 × 844</i></p>
     <div class="f" data-tab="home">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:10px"><div class="lb s">‹</div><div class="lb b">Закрытые предложения</div><div class="lb s">Фильтры</div></div>
@@ -930,7 +880,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 23</b><span>Медиалента</span><i>прокручивается</i></p>
+    <p class="cap"><b>C · 21</b><span>Медиалента</span><i>прокручивается</i></p>
     <div class="f tall" data-tab="home">
       <div class="scr"><div class="body">
         <div class="hdr"><div class="logo">УФФИЦИ</div><div class="ic"><i></i><i class="dot"></i><i class="sq cnt"></i></div></div>
@@ -958,7 +908,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>C · 24</b><span>Статья / лукбук</span><i>прокручивается</i></p>
+    <p class="cap"><b>C · 22</b><span>Статья / лукбук</span><i>прокручивается</i></p>
     <div class="f tall">
       <div class="scr"><div class="body">
         <div class="ph" style="height:420px"><span class="mk" style="left:150px;top:210px;position:absolute;background:var(--paper);color:var(--ink);border:1px solid var(--ink);box-shadow:none">+</span></div>
@@ -998,7 +948,7 @@ body.no-an .an,body.no-an .mk{display:none}
 <div class="wall">
 
   <div class="item">
-    <p class="cap"><b>D · 25</b><span>Карточка товара</span><i>прокручивается</i></p>
+    <p class="cap"><b>D · 23</b><span>Карточка товара</span><i>прокручивается</i></p>
     <div class="f" style="height:1580px">
       <div class="scr"><div class="body">
         <div class="ph" style="height:440px">
@@ -1026,9 +976,7 @@ body.no-an .an,body.no-an .mk{display:none}
           <div class="fx g6" style="flex-wrap:wrap">
             <div class="chip">46</div><div class="chip on">48 · ваш</div><div class="chip">50</div><div class="chip" style="opacity:.4">52</div>
           </div>
-          <div class="card" style="margin-top:10px;padding:9px 10px">
-            <div class="fx between center"><div class="lb s" style="font-size:11px">В Brioni вы обычно берёте 48</div><div class="lb s" style="font-size:11px;text-decoration:underline">Подробнее</div></div>
-          </div>
+
           <div class="div" style="margin:18px 0 12px"></div>
           <div class="lb" style="font-size:12.5px;line-height:1.5">Двубортное пальто из кашемира двойного плетения. Ручная сборка плеча, подкладка из шёлка.</div>
           <div class="div" style="margin:14px 0 0"></div>
@@ -1062,58 +1010,24 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:150px;top:668px">3</i>
       <i class="mk" style="left:348px;top:790px">4</i>
       <i class="mk" style="left:348px;top:900px">5</i>
-      <i class="mk" style="left:186px;top:1514px">6</i>
+      <i class="mk" style="left:186px;top:1470px">6</i>
       <i class="mk" style="left:348px;top:1180px">7</i>
     </div>
     <ol class="an">
       <li>Галерея на весь экран, 6 кадров, детальный зум по щипку. Прогрессивная загрузка: каркас и размытая миниатюра, затем фото. Готовность к взаимодействию — 1,5–2 с.</li>
-      <li>Статус остатка виден рядом с брендом: In Stock, «Осталось 2» при остатке менее трёх, «Нет в наличии» — экран 29.</li>
-      <li>Цвет выбирается образцами материала, размер подсвечен из профиля, недоступные размеры приглушены. Гид по размерам — экран 28.</li>
+      <li>Статус остатка виден рядом с брендом: In Stock, «Осталось 2» при остатке менее трёх, «Нет в наличии» — экран 26.</li>
+      <li>Цвет выбирается образцами материала, размер подсвечен из профиля, недоступные размеры приглушены. Гид по размерам — экран 25.</li>
       <li>Описание — 2–3 коротких предложения. Остальные атрибуты убраны в раскрывающиеся строки: цвет, состав ткани, технология пошива, сезонность и мероприятие.</li>
       <li>Уникальный серийный номер — обязательный блок подтверждения подлинности.</li>
-      <li>Закреплённая панель действий: «В корзину» ставит резерв на 15 минут, «В бутик» ведёт на экран 31.</li>
-      <li>Подсказка размера персональная: показывает размер, который клиент носит именно в этом доме, и открывает экран 26 с источником данных.</li>
+      <li>Закреплённая панель действий. <b>Товар в корзине не резервируется:</b> вещь достаётся тому, кто первым завершил покупку.</li>
+      <li>Подсказка «ваш размер» использует размеры из профиля без привязки к бренду: автоматическое сопоставление по домам из MVP исключено.</li>
       <li>Блоки «Из этой коллекции» и «С этим покупают» — горизонтальными лентами под характеристиками, чтобы не отвлекать от решения о покупке.</li>
       <li class="q">Источник данных для связанных товаров не подтверждён: автоматические связи из API, ручная подборка менеджера или отказ от блока. Решение — после аудита Swagger. Композицию согласовываем сейчас, наполнение позже.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>D · 26</b><span>Подсказка размера в бренде</span><i>модальный лист</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="ph" style="height:300px;opacity:.55"></div>
-        <div class="pad" style="padding-top:14px;opacity:.55">
-          <div class="lb xs">ZEGNA</div>
-          <div class="lb h2" style="margin:6px 0">Костюм шерстяной</div>
-        </div>
-        <div class="dim"></div>
-        <div class="sheet">
-          <div class="fx between center" style="margin-bottom:14px"><div class="lb h2">Ваш размер здесь</div><div class="lb s">✕</div></div>
-          <div class="card" style="border-color:var(--ink);margin-bottom:14px">
-            <div class="fx between center"><div class="lb b" style="font-size:14px">Zegna · костюмы</div><div class="price" style="font-size:15px">50</div></div>
-            <div class="lb s" style="margin-top:8px">Ваш базовый размер — 48, но в костюмах Zegna вы берёте 50</div>
-          </div>
-          <div class="row">Откуда это известно <s>Из вашей примерки в июле ›</s></div>
-          <div class="row">Изменить размер для бренда <s>›</s></div>
-          <div class="lb s" style="font-size:10.5px;line-height:1.5;margin-top:14px">Общая таблица размеров бренда — в гиде по размерам.</div>
-          <div class="btn" style="margin-top:16px">ВЫБРАТЬ 50</div>
-        </div>
-      </div></div>
-      <i class="mk" style="left:348px;top:420px">1</i>
-      <i class="mk" style="left:348px;top:560px">2</i>
-      <i class="mk" style="left:348px;top:680px">3</i>
-    </div>
-    <ol class="an">
-      <li>Открывается по тапу на подсказку «ваш размер» в карточке. Это не таблица бренда, а персональная рекомендация именно для этого клиента.</li>
-      <li>Показываем источник данных: клиент должен понимать, почему система предлагает не его базовый размер.</li>
-      <li>Изменить запись можно прямо здесь — исправление уходит в раздел размеров профиля.</li>
-      <li class="q">Если для бренда записи нет, экран показывает базовый размер и предлагает уточнить после покупки. Логику приоритетов должен зафиксировать аналитик.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>D · 27</b><span>Просмотр фото с зумом</span><i>390 × 844</i></p>
+    <p class="cap"><b>D · 24</b><span>Просмотр фото с зумом</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body ph" style="background:repeating-linear-gradient(45deg,#CFC9BE 0 5px,#DAD5CB 5px 10px)">
         <div style="position:absolute;left:18px;top:16px" class="lb s">✕</div>
@@ -1128,7 +1042,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>D · 28</b><span>Гид по размерам бренда</span><i>модальный лист</i></p>
+    <p class="cap"><b>D · 25</b><span>Гид по размерам бренда</span><i>модальный лист</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="ph" style="height:300px;opacity:.5"></div>
@@ -1152,11 +1066,12 @@ body.no-an .an,body.no-an .mk{display:none}
     <ol class="an">
       <li>Таблица соответствий US / EU / UK и замеры конкретного бренда, строка с размером клиента подсвечена.</li>
       <li>Сохранение размера в профиль прямо отсюда — ещё одна точка контекстного сбора данных.</li>
+      <li class="q">Механика целевая, но данные нужно подтвердить: если размерных таблиц нет в системе клиента, их придётся туда добавить. Сложную автоматическую систему подбора по бренду сейчас не строим.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>D · 29</b><span>Нет в наличии</span><i>вариант карточки</i></p>
+    <p class="cap"><b>D · 26</b><span>Нет в наличии</span><i>вариант карточки</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="ph" style="height:330px;opacity:.72"></div>
@@ -1183,39 +1098,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>D · 30</b><span>Нет подходящего размера</span><i>390 × 844</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="ph" style="height:300px;opacity:.72"></div>
-        <div class="pad" style="padding-top:16px">
-          <div class="fx between center"><div class="lb xs">LORO PIANA</div><span class="badge warn">Вашего размера нет</span></div>
-          <div class="lb h2" style="margin:7px 0 6px">Жакет из викуньи</div>
-          <div class="price" style="font-size:18px">432 000 ₽</div>
-          <div class="fx g6" style="margin:18px 0 0;flex-wrap:wrap">
-            <div class="chip">46</div><div class="chip" style="opacity:.4">48 · ваш</div><div class="chip">52</div>
-          </div>
-          <div class="card" style="margin-top:20px">
-            <div class="lb" style="font-size:12.5px;line-height:1.5">В этом доме вы обычно берёте 48 — его нет. Сообщим о поступлении или попросим менеджера найти вещь в бутиках и архиве.</div>
-          </div>
-        </div>
-        <div class="sticky">
-          <div class="fx g8"><div class="btn" style="flex:1">УВЕДОМИТЬ О ПОСТУПЛЕНИИ</div><div class="btn gh" style="width:104px">В ЧАТ</div></div>
-        </div>
-      </div></div>
-      <i class="mk" style="left:348px;top:390px">1</i>
-      <i class="mk" style="left:348px;top:470px">2</i>
-      <i class="mk" style="left:348px;top:600px">3</i>
-    </div>
-    <ol class="an">
-      <li>Отличается от «нет в наличии»: товар есть, но не в размере клиента. Формулировка бейджа персональная.</li>
-      <li>Размер клиента показан приглушённым в общем ряду, а не спрятан: видно, что именно недоступно.</li>
-      <li>Два выхода: подписка на поступление конкретного размера и консьерж-запрос менеджеру.</li>
-      <li class="q">Нужно решить, предлагать ли соседний размер, если по бренд-мэппингу он вероятно подойдёт. Для люкса это спорно и требует обсуждения.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>D · 31</b><span>Примерка в бутике</span><i>390 × 844</i></p>
+    <p class="cap"><b>D · 27</b><span>Примерка в бутике</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px"><div class="lb s">‹</div><div class="lb b">Примерка в бутике</div><div class="lb s">Карта</div></div>
@@ -1242,10 +1125,11 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:186px;top:762px">4</i>
     </div>
     <ol class="an">
-      <li>Карта и список — два способа выбора адреса. На MVP бутик один, но логика мультивыбора закладывается сразу.</li>
+      <li>Шаг 1 из 3: выбор бутика. Дальше — дата и время, затем подтверждение и состояние записи.</li>
       <li>В карточке бутика видно, есть ли вещь на месте или её нужно везти со склада — от этого зависит статус «В пути в бутик».</li>
       <li>Резерв на бэкенде синхронизируется с POS-системой бутика.</li>
-      <li class="q">Длительность брони не зафиксирована. Здесь и в статусе заказа нужен точный срок: «Вещи ждут вас до 18:00 завтрашнего дня».</li>
+      <li>Резервирование вещи для примерки остаётся допустимым сценарием MVP — в отличие от резерва корзины, который исключён.</li>
+      <li class="q">Длительность брони не зафиксирована, и комментарий «резерв для примерки оставляем в MVP?» в разборе остался без ответа.</li>
     </ol>
   </div>
 
@@ -1258,45 +1142,151 @@ body.no-an .an,body.no-an .mk{display:none}
 <div class="wall">
 
   <div class="item">
-    <p class="cap"><b>E · 32</b><span>Корзина</span><i>390 × 844</i></p>
+    <p class="cap"><b>D · 28</b><span>Примерка · дата и время</span><i>390 × 844</i></p>
+    <div class="f">
+      <div class="scr"><div class="body">
+        <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Когда вам удобно</div><div class="lb s">2 / 3</div></div>
+        <div class="pad">
+          <div class="fx g10 center pb">
+            <div class="ph" style="width:52px;height:66px;flex:none"></div>
+            <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12.5px">Пальто, размер 48</div><div class="lb s">Столешников пер., 12</div></div>
+          </div>
+          <div class="div"></div>
+          <div class="lb xs" style="margin-bottom:10px">Дата</div>
+          <div class="hs pb">
+            <div class="card" style="width:64px;flex:none;text-align:center;padding:10px 4px"><div class="lb s" style="font-size:10px">пн</div><div class="lb b" style="font-size:16px">18</div></div>
+            <div class="card" style="width:64px;flex:none;text-align:center;padding:10px 4px;border-color:var(--ink)"><div class="lb s" style="font-size:10px">вт</div><div class="lb b" style="font-size:16px">19</div></div>
+            <div class="card" style="width:64px;flex:none;text-align:center;padding:10px 4px"><div class="lb s" style="font-size:10px">ср</div><div class="lb b" style="font-size:16px">20</div></div>
+            <div class="card" style="width:64px;flex:none;text-align:center;padding:10px 4px;opacity:.4"><div class="lb s" style="font-size:10px">чт</div><div class="lb b" style="font-size:16px">21</div></div>
+          </div>
+          <div class="lb xs" style="margin:18px 0 10px">Время</div>
+          <div class="fx g6" style="flex-wrap:wrap">
+            <div class="chip">12:00</div><div class="chip on">14:30</div><div class="chip">16:00</div><div class="chip" style="opacity:.4">18:00</div><div class="chip">20:00</div>
+          </div>
+          <div class="lb s" style="font-size:10.5px;margin-top:14px">Недоступные слоты приглушены — в это время бутик занят</div>
+        </div>
+        <div class="sticky"><div class="btn">ДАЛЕЕ · ПОДТВЕРЖДЕНИЕ</div></div>
+      </div></div>
+      <i class="mk" style="left:348px;top:190px">1</i>
+      <i class="mk" style="left:348px;top:340px">2</i>
+      <i class="mk" style="left:348px;top:520px">3</i>
+      <i class="mk" style="left:186px;top:762px">4</i>
+    </div>
+    <ol class="an">
+      <li>Шаг 1 — выбор бутика, шаг 2 — дата и время, шаг 3 — подтверждение. Разбор экранов прямо требует эти недостающие шаги.</li>
+      <li>Контекст вещи в шапке: клиент должен видеть, что именно он едет примерять.</li>
+      <li>Занятые слоты показываются приглушёнными, а не скрываются.</li>
+      <li class="q">Источник слотов не определён: расписание бутика в системе клиента или фиксированные интервалы. Нужно проверить в API.</li>
+    </ol>
+  </div>
+
+  <div class="item">
+    <p class="cap"><b>D · 29</b><span>Примерка · подтверждение</span><i>390 × 844</i></p>
+    <div class="f">
+      <div class="scr"><div class="body">
+        <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Подтверждение</div><div class="lb s">3 / 3</div></div>
+        <div class="pad">
+          <div class="card" style="border-color:var(--ink);margin-bottom:18px">
+            <div class="fx between center"><div class="lb b" style="font-size:13px">Вторник, 19 августа</div><div class="lb b">14:30</div></div>
+            <div class="lb s" style="margin-top:8px">Бутик Уффици · Столешников пер., 12</div>
+          </div>
+          <div class="fx g10 center pb">
+            <div class="ph" style="width:52px;height:66px;flex:none"></div>
+            <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12.5px">Пальто, размер 48</div></div>
+          </div>
+          <div class="div"></div>
+          <div class="row">Имя <s>Александр ›</s></div>
+          <div class="row">Телефон <s>+7 (912) 345-67-89 ›</s></div>
+          <div class="card" style="margin-top:18px">
+            <div class="lb" style="font-size:12.5px;line-height:1.5">Вещь будет подготовлена к вашему приходу. Оплата при примерке не требуется.</div>
+          </div>
+        </div>
+        <div class="sticky"><div class="btn">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</div></div>
+      </div></div>
+      <i class="mk" style="left:348px;top:190px">1</i>
+      <i class="mk" style="left:348px;top:420px">2</i>
+      <i class="mk" style="left:348px;top:560px">3</i>
+    </div>
+    <ol class="an">
+      <li>Сводка перед подтверждением: дата, время, адрес и вещь на одном экране.</li>
+      <li>Контакты подставлены из профиля, менять можно здесь же.</li>
+      <li>Резервирование вещи для примерки остаётся допустимым сценарием MVP — в отличие от резерва корзины.</li>
+      <li class="q">Комментарий в разборе «резерв товара для примерки оставляем в MVP?» остался без ответа — подтверждение нужно.</li>
+    </ol>
+  </div>
+
+  <div class="item">
+    <p class="cap"><b>D · 30</b><span>Примерка · вы записаны</span><i>390 × 844</i></p>
+    <div class="f">
+      <div class="scr"><div class="body pad" style="padding-top:60px">
+        <div style="width:46px;height:46px;border:1.5px solid var(--ink);border-radius:50%;margin-bottom:22px"></div>
+        <div class="lb h">Вы записаны на примерку</div>
+        <div class="lb s" style="margin:12px 0 24px">Напомним за два часа. Если планы изменятся, запись можно перенести или отменить.</div>
+        <div class="card" style="border-color:var(--ink);margin-bottom:10px">
+          <div class="fx between center"><div class="lb b" style="font-size:13px">Вторник, 19 августа</div><div class="lb b">14:30</div></div>
+          <div class="lb s" style="margin-top:8px">Столешников пер., 12 · ежедневно 11:00–22:00</div>
+        </div>
+        <div class="card" style="margin-bottom:22px">
+          <div class="fx g10 center">
+            <div class="ph" style="width:52px;height:66px;flex:none"></div>
+            <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12.5px">Пальто, размер 48</div></div>
+          </div>
+        </div>
+        <div class="btn">ДОБАВИТЬ В КАЛЕНДАРЬ</div>
+        <div class="btn gh" style="margin-top:9px">ПЕРЕНЕСТИ ИЛИ ОТМЕНИТЬ</div>
+      </div></div>
+      <i class="mk" style="left:348px;top:250px">1</i>
+      <i class="mk" style="left:348px;top:400px">2</i>
+      <i class="mk" style="left:348px;top:660px">3</i>
+    </div>
+    <ol class="an">
+      <li>Состояние успешной записи — последний из недостающих шагов, которые просил разбор.</li>
+      <li>Запись видна в истории заказов отдельным типом, как и раньше бронь.</li>
+      <li>Перенос и отмена доступны отсюда и из карточки записи в заказах.</li>
+      <li class="q">Правила переноса и отмены не описаны: за сколько часов, сколько раз, что происходит с подготовленной вещью.</li>
+    </ol>
+  </div>
+
+  <div class="item">
+    <p class="cap"><b>E · 31</b><span>Корзина</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px"><div class="lb s">‹</div><div class="lb b">Корзина · 2</div><div class="lb s"></div></div>
-        <div style="background:var(--paper-2);padding:9px 18px" class="fx between center">
-          <div class="lb s" style="font-size:11px">Вещи закреплены за вами</div>
-          <div class="lb s b" style="font-size:11px">14:52</div>
-        </div>
-        <div class="pad" style="padding-top:14px">
-          <div class="lb xs" style="margin-bottom:10px">Отправление 1 · со склада</div>
+        <div class="pad" style="padding-top:16px">
           <div class="fx g10 pb">
             <div class="ph" style="width:70px;height:90px;flex:none"></div>
             <div style="flex:1">
               <div class="lb s">BRIONI</div>
               <div class="lb" style="font-size:12px">Пальто из кашемира</div>
               <div class="fx g6 center"><div class="lb s">Размер 48</div><div class="lb s" style="text-decoration:underline;font-size:10.5px">изменить</div></div>
-              <div class="price">368 500 ₽</div>
+              <div class="fx between center" style="margin-top:4px">
+                <div class="price">368 500 ₽</div>
+                <div class="fx g8 center"><div class="chip" style="width:28px;justify-content:center">−</div><div class="lb b">1</div><div class="chip" style="width:28px;justify-content:center">+</div></div>
+              </div>
             </div>
             <div class="lb s">✕</div>
           </div>
           <div class="div"></div>
-          <div class="lb xs" style="margin-bottom:10px">Отправление 2 · из бутика</div>
           <div class="fx g10">
             <div class="ph" style="width:70px;height:90px;flex:none"></div>
             <div style="flex:1">
               <div class="lb s">ZEGNA</div>
               <div class="lb" style="font-size:12px">Брюки шерстяные</div>
               <div class="lb s">Размер 48</div>
-              <div class="price">96 500 ₽</div>
+              <div class="fx between center" style="margin-top:4px">
+                <div class="price">96 500 ₽</div>
+                <div class="fx g8 center"><div class="chip" style="width:28px;justify-content:center">−</div><div class="lb b">1</div><div class="chip" style="width:28px;justify-content:center">+</div></div>
+              </div>
             </div>
             <div class="lb s">✕</div>
           </div>
           <div class="div"></div>
           <div class="fx between" style="font-size:12.5px;padding:3px 0"><div>Вещи</div><div>465 000 ₽</div></div>
-          <div class="fx between" style="font-size:12.5px;padding:3px 0"><div class="lb s">Доставка · 2 отправления</div><div class="lb s">рассчитается на следующем шаге</div></div>
+          <div class="fx between" style="font-size:12.5px;padding:3px 0"><div class="lb s">Доставка</div><div class="lb s">рассчитается после выбора способа</div></div>
         </div>
         <div class="sticky">
           <div class="fx between center pb"><div class="lb b">Итого</div><div class="price" style="font-size:17px">465 000 ₽</div></div>
-          <div class="fx g8"><div class="btn" style="flex:1">ОФОРМИТЬ ЗАКАЗ</div><div class="btn gh" style="width:132px">КОНСУЛЬТАЦИЯ</div></div>
+          <div class="fx g8"><div class="btn" style="flex:1">ОФОРМИТЬ ЗАКАЗ</div><div class="btn gh" style="width:110px">В ЧАТ</div></div>
         </div>
       </div></div>
       <i class="mk" style="left:250px;top:104px">1</i>
@@ -1305,18 +1295,19 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:186px;top:730px">4</i>
     </div>
     <ol class="an">
-      <li>Видимый таймер резерва 15 минут. Формулировка мягкая — «вещи закреплены за вами», а не «осталось времени».</li>
-      <li>Сплит-заказ: позиции сгруппированы по источникам, стоимость доставки считается по каждой ветке отдельно.</li>
+      <li><b>Товар в корзине не резервируется.</b> Таймер удержания убран по решению разбора: вещь достаётся тому, кто первым завершил покупку.</li>
+      <li>Управление количеством у каждой позиции, максимум ограничен фактическим остатком. Состояние предела — отдельный экран.</li>
+      <li><b>Один заказ — одна служба доставки.</b> Разные способы означают разные заказы: две службы внутри одного заказа в MVP не показываем.</li>
       <li>Итог прозрачный, без промо-блоков и визуального шума.</li>
       <li>Цены и итог только в рублях, округлены вверх.</li>
-      <li>Размер меняется прямо из строки позиции, экран 33 — без возврата в карточку товара.</li>
-      <li>«Консультация» — равноправное второе действие: клиент может не быть готов оплачивать дорогую вещь до разговора с менеджером. Ведёт на экран 34.</li>
-      <li class="q">Поведение по истечении 15-минутного резерва не описано: что происходит с позицией в корзине, на шаге оплаты и при возврате клиента.</li>
+      <li>Размер меняется прямо из строки позиции, без возврата в карточку товара.</li>
+      <li>«В чат» — связь с менеджером по вопросам о вещи. Резерв на время консультации и запись на звонок в MVP не реализуются.</li>
+      <li class="q">Разбор отменил резерв корзины, которого требовало ТЗ. Расхождение стоит зафиксировать письменно: без удержания вещь может уйти другому покупателю прямо во время оформления.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 33</b><span>Изменение размера в корзине</span><i>модальный лист</i></p>
+    <p class="cap"><b>E · 32</b><span>Изменение размера в корзине</span><i>модальный лист</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px;opacity:.5"><div class="lb s">‹</div><div class="lb b">Корзина · 2</div><div class="lb s"></div></div>
@@ -1326,13 +1317,13 @@ body.no-an .an,body.no-an .mk{display:none}
         <div class="dim"></div>
         <div class="sheet">
           <div class="fx between center" style="margin-bottom:14px"><div class="lb h2">Размер</div><div class="lb s">✕</div></div>
-          <div class="lb s" style="margin-bottom:16px">Brioni · пальто из кашемира. В этом доме вы берёте 48.</div>
+          <div class="lb s" style="margin-bottom:16px">Brioni · пальто из кашемира</div>
           <div class="fx g6" style="flex-wrap:wrap;margin-bottom:8px">
             <div class="chip">46</div><div class="chip on">48 · ваш</div><div class="chip">50</div><div class="chip" style="opacity:.4">52</div>
           </div>
           <div class="lb s" style="font-size:10.5px;margin-bottom:16px">52 — нет в наличии. Сообщим о поступлении.</div>
           <div class="btn">ЗАМЕНИТЬ РАЗМЕР</div>
-          <div class="btn gh" style="border:0;margin-top:4px">Нужна консультация по размеру</div>
+          <div class="btn gh" style="border:0;margin-top:4px">Спросить у менеджера в чате</div>
         </div>
       </div></div>
       <i class="mk" style="left:348px;top:430px">1</i>
@@ -1342,177 +1333,157 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Размер меняется прямо в корзине, без возврата в карточку и повторного добавления.</li>
-      <li>Подсказка учитывает бренд-мэппинг: показываем размер, который клиент обычно берёт именно в этом доме.</li>
-      <li>Замена пересобирает резерв: новая позиция получает свои 15 минут, прежняя освобождается.</li>
-      <li>Если клиент сомневается — прямой переход в консультацию, экран 34, без выхода из корзины.</li>
-      <li class="q">Нужно решение, что делать при замене на размер с другого склада: у позиции меняется логистическая ветка, а значит и стоимость доставки.</li>
+      <li>Недоступные размеры приглушены, рядом — предложение уведомить о поступлении.</li>
+      <li>Замена размера меняет позицию в корзине; товар при этом не удерживается за клиентом.</li>
+      <li>Если клиент сомневается — переход в чат с менеджером, без выхода из корзины.</li>
+      <li>Подсказка «ваш размер» использует размеры из профиля без привязки к бренду.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 34</b><span>Запрос консультации</span><i>390 × 844</i></p>
+    <p class="cap"><b>E · 33</b><span>Корзина · остаток исчерпан</span><i>модальный лист</i></p>
     <div class="f">
       <div class="scr"><div class="body">
-        <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Нужна консультация</div><div class="lb s"></div></div>
-        <div class="pad">
-          <div class="fx g10 center pb">
-            <div class="ph" style="width:60px;height:76px;flex:none"></div>
-            <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12.5px">Пальто из кашемира</div><div class="lb s">Размер 48 · 368 500 ₽</div></div>
-          </div>
-          <div class="div"></div>
-          <div class="lb xs" style="margin-bottom:10px">С чем помочь</div>
-          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:18px">
-            <div class="chip on">Размер и посадка</div><div class="chip">Ткань и уход</div><div class="chip">Сочетания</div><div class="chip">Наличие</div>
-          </div>
-          <div class="lb xs" style="margin-bottom:8px">Как связаться</div>
-          <div class="card" style="border-color:var(--ink);margin-bottom:9px"><div class="fx between center"><div class="lb b" style="font-size:13px">В чате приложения</div><span class="badge fill">Выбрано</span></div></div>
-          <div class="card" style="margin-bottom:18px"><div class="lb b" style="font-size:13px">Звонок менеджера</div><div class="lb s" style="margin-top:6px">На +7 (912) 345-67-89</div></div>
-          <div class="lb xs" style="margin-bottom:10px">Когда удобно</div>
-          <div class="fx g6" style="flex-wrap:wrap"><div class="chip on">Как можно скорее</div><div class="chip">Сегодня вечером</div><div class="chip">Завтра днём</div></div>
-          <div class="card" style="margin-top:18px">
-            <div class="lb" style="font-size:12.5px;line-height:1.5">Пока идёт консультация, вещь закреплена за вами — оплачивать сейчас не нужно.</div>
-          </div>
+        <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px;opacity:.5"><div class="lb s">‹</div><div class="lb b">Корзина · 3</div><div class="lb s"></div></div>
+        <div class="pad" style="opacity:.5">
+          <div class="fx g10"><div class="ph" style="width:70px;height:90px;flex:none"></div><div style="flex:1"><div class="lb s">ZEGNA</div><div class="lb" style="font-size:12px">Футболка хлопковая</div></div></div>
         </div>
-        <div class="sticky"><div class="btn">ЗАПРОСИТЬ КОНСУЛЬТАЦИЮ</div></div>
+        <div class="dim"></div>
+        <div class="sheet">
+          <div class="lb h2">Это всё, что есть</div>
+          <div class="lb s" style="margin:10px 0 18px">В наличии три единицы этой позиции — больше добавить нельзя. Сообщим, когда поступят новые.</div>
+          <div class="fx between center" style="padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:18px">
+            <div class="lb">Количество</div>
+            <div class="fx g14 center">
+              <div class="chip" style="width:34px;justify-content:center">−</div>
+              <div class="lb b">3</div>
+              <div class="chip" style="width:34px;justify-content:center;opacity:.35">+</div>
+            </div>
+          </div>
+          <div class="btn">ПОНЯТНО</div>
+          <div class="btn gh" style="border:0;margin-top:4px">Уведомить о поступлении</div>
+        </div>
       </div></div>
-      <i class="mk" style="left:348px;top:220px">1</i>
-      <i class="mk" style="left:348px;top:300px">2</i>
-      <i class="mk" style="left:348px;top:470px">3</i>
-      <i class="mk" style="left:348px;top:640px">4</i>
-      <i class="mk" style="left:186px;top:762px">5</i>
+      <i class="mk" style="left:348px;top:470px">1</i>
+      <i class="mk" style="left:348px;top:620px">2</i>
+      <i class="mk" style="left:348px;top:760px">3</i>
     </div>
     <ol class="an">
-      <li>Контекст товара всегда в шапке: менеджер должен получить запрос вместе с позицией, размером и ценой.</li>
-      <li>Тема запроса задаёт маршрутизацию в RetailCRM и помогает менеджеру подготовиться до звонка.</li>
-      <li>Способ связи выбирает клиент: для премиум-аудитории звонок часто предпочтительнее переписки.</li>
-      <li>Удобное время снимает главное раздражение — звонок в неподходящий момент.</li>
-      <li>Обещание резерва проговаривается до отправки запроса: это то, что снимает необходимость платить сразу.</li>
+      <li>Состояние, которое прямо запросил разбор: на складе три единицы — увеличение до четырёх недоступно и сопровождается сообщением.</li>
+      <li>Плюс приглушён, а не исчезает: клиент понимает, что упёрся в остаток, а не в ошибку интерфейса.</li>
+      <li>Второй выход — подписка на поступление, как в карточке товара.</li>
+      <li>Товар в корзине не резервируется: остаток может измениться, пока клиент не завершил оплату.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 35</b><span>Резерв подтверждён</span><i>390 × 844</i></p>
+    <p class="cap"><b>E · 34</b><span>Выбор адреса доставки</span><i>390 × 844</i></p>
     <div class="f">
-      <div class="scr"><div class="body pad" style="padding-top:60px">
-        <div style="width:46px;height:46px;border:1.5px solid var(--ink);border-radius:50%;margin-bottom:22px"></div>
-        <div class="lb h">Вещь закреплена за вами</div>
-        <div class="lb s" style="margin:12px 0 24px">Менеджер свяжется в чате в течение 30 минут. Оплачивать сейчас не нужно.</div>
-        <div class="card" style="border-color:var(--ink);margin-bottom:10px">
-          <div class="fx between center"><div class="lb b" style="font-size:13px">Резерв действует</div><div class="lb b">до 19 августа, 20:00</div></div>
-          <div class="lb s" style="margin-top:8px">24 часа с момента запроса. Продлить можно в переписке с менеджером.</div>
-        </div>
-        <div class="card" style="margin-bottom:22px">
-          <div class="fx g10 center">
-            <div class="ph" style="width:52px;height:66px;flex:none"></div>
-            <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12.5px">Пальто, размер 48</div><div class="lb s">368 500 ₽</div></div>
+      <div class="scr"><div class="body">
+        <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Куда доставить</div><div class="lb s"></div></div>
+        <div class="pad">
+          <div class="card" style="border-color:var(--ink);margin-bottom:10px">
+            <div class="fx between center"><div class="lb b" style="font-size:13px">Дом</div><span class="badge fill">Выбрано</span></div>
+            <div class="lb s" style="margin-top:6px">Столешников пер., 12, кв. 4</div>
+            <div class="lb s" style="margin-top:8px;text-decoration:underline">Изменить</div>
+          </div>
+          <div class="card" style="margin-bottom:10px">
+            <div class="fx between center"><div class="lb b" style="font-size:13px">Офис</div><div class="lb s">✕</div></div>
+            <div class="lb s" style="margin-top:6px">Пресненская наб., 8, стр. 1</div>
+            <div class="lb s" style="margin-top:8px;text-decoration:underline">Изменить</div>
+          </div>
+          <div class="btn gh" style="margin-bottom:18px">ДОБАВИТЬ АДРЕС</div>
+          <div class="card" style="border-style:dashed">
+            <div class="lb b" style="font-size:12.5px">Заберу в пункте выдачи</div>
+            <div class="lb s" style="margin-top:6px;line-height:1.45">Тогда адрес не понадобится — выберете пункт на следующем шаге</div>
           </div>
         </div>
-        <div class="btn">ПЕРЕЙТИ В ЧАТ</div>
-        <div class="btn gh" style="margin-top:9px">ВЕРНУТЬСЯ В КАТАЛОГ</div>
+        <div class="sticky"><div class="btn">ДАЛЕЕ · СПОСОБ ДОСТАВКИ</div></div>
       </div></div>
-      <i class="mk" style="left:348px;top:250px">1</i>
-      <i class="mk" style="left:348px;top:400px">2</i>
+      <i class="mk" style="left:348px;top:170px">1</i>
+      <i class="mk" style="left:348px;top:330px">2</i>
+      <i class="mk" style="left:348px;top:560px">3</i>
+      <i class="mk" style="left:186px;top:762px">4</i>
+    </div>
+    <ol class="an">
+      <li>Выбор сохранённого адреса, добавление нового и редактирование — экрана не было, разбор его требует.</li>
+      <li>Тот же список открывается из профиля: данные общие.</li>
+      <li>Адрес не обязателен: при получении в пункте выдачи домашний адрес не используется вообще. Поэтому шаг можно пройти без выбора.</li>
+      <li>Порядок шагов: получатель → адрес или ПВЗ → способ доставки и расчёт стоимости.</li>
+    </ol>
+  </div>
+
+  <div class="item">
+    <p class="cap"><b>E · 35</b><span>Добавление адреса</span><i>390 × 844</i></p>
+    <div class="f">
+      <div class="scr"><div class="body">
+        <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Новый адрес</div><div class="lb s">Готово</div></div>
+        <div class="pad">
+          <div class="lb xs" style="margin-bottom:8px">Город</div>
+          <div class="inp on" style="margin-bottom:14px">Москва</div>
+          <div class="lb xs" style="margin-bottom:8px">Улица и дом</div>
+          <div class="inp" style="margin-bottom:14px">Начните вводить адрес</div>
+          <div class="fx g10" style="margin-bottom:14px">
+            <div style="flex:1"><div class="lb xs" style="margin-bottom:8px">Квартира</div><div class="inp"></div></div>
+            <div style="flex:1"><div class="lb xs" style="margin-bottom:8px">Этаж</div><div class="inp"></div></div>
+          </div>
+          <div class="lb xs" style="margin-bottom:8px">Комментарий курьеру</div>
+          <div class="inp" style="height:70px;align-items:flex-start;padding-top:12px;margin-bottom:18px">Код домофона, ориентиры</div>
+          <div class="lb xs" style="margin-bottom:8px">Название</div>
+          <div class="fx g6"><div class="chip on">Дом</div><div class="chip">Офис</div><div class="chip">Другое</div></div>
+        </div>
+        <div class="sticky"><div class="btn">СОХРАНИТЬ АДРЕС</div></div>
+      </div></div>
+      <i class="mk" style="left:348px;top:220px">1</i>
+      <i class="mk" style="left:348px;top:330px">2</i>
       <i class="mk" style="left:348px;top:640px">3</i>
     </div>
     <ol class="an">
-      <li>Три вещи, которые клиент должен понять сразу: вещь закреплена, когда свяжется менеджер, платить сейчас не нужно.</li>
-      <li>Срок резерва — абсолютной датой и временем, а не обратным отсчётом: для суточного резерва таймер создаёт лишнее напряжение.</li>
-      <li>Резерв под консультацию живёт на обращении, а не на корзине: 15-минутный технический резерв здесь не показывается и не тикает.</li>
-      <li class="q">24 часа — рабочее значение для обсуждения. Нужны решения: длительность, кто и на сколько продлевает, что происходит при истечении.</li>
+      <li>Город отдельным полем: он нужен для расчёта стоимости и срока доставки.</li>
+      <li>Подсказки при вводе адреса — из сервиса геокодирования курьерской службы.</li>
+      <li>Название адреса делает выбор на checkout быстрым и понятным.</li>
+      <li class="q">Набор полей зависит от требований СДЭК к адресу — нужно сверить с их API.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 36</b><span>Корзина · позиция на консультации</span><i>390 × 844</i></p>
+    <p class="cap"><b>E · 36</b><span>Выбор пункта выдачи</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
-        <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px"><div class="lb s">‹</div><div class="lb b">Корзина · 2</div><div class="lb s"></div></div>
+        <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px"><div class="lb s">‹</div><div class="lb b">Пункт выдачи</div><div class="lb s">Карта</div></div>
+        <div class="ph r169" style="margin:0 18px">
+          <div style="position:absolute;left:38%;top:44%;width:14px;height:14px;border-radius:50% 50% 50% 0;background:var(--bordeaux);rotate:-45deg"></div>
+          <div style="position:absolute;left:64%;top:58%;width:14px;height:14px;border-radius:50% 50% 50% 0;background:var(--ink);rotate:-45deg"></div>
+        </div>
         <div class="pad" style="padding-top:14px">
-          <div class="lb xs" style="margin-bottom:10px">На консультации</div>
-          <div class="card" style="border-color:var(--ink);margin-bottom:14px">
-            <div class="fx g10 pb">
-              <div class="ph" style="width:70px;height:90px;flex:none"></div>
-              <div style="flex:1">
-                <div class="lb s">BRIONI</div>
-                <div class="lb" style="font-size:12px">Пальто из кашемира</div>
-                <div class="lb s">Размер 48</div>
-                <div class="price">368 500 ₽</div>
-              </div>
-            </div>
-            <div class="div" style="margin:2px 0 10px"></div>
-            <div class="fx between center"><span class="badge warn">Менеджер готовит ответ</span><div class="lb s">Резерв до 20:00</div></div>
+          <div class="card" style="border-color:var(--ink);margin-bottom:10px">
+            <div class="fx between center"><div class="lb b" style="font-size:13px">СДЭК · Тверская, 18</div><span class="badge fill">Выбран</span></div>
+            <div class="lb s" style="margin-top:6px">Пн–сб 10:00–21:00 · примерка недоступна</div>
           </div>
-          <div class="lb xs" style="margin-bottom:10px">Готово к оформлению</div>
-          <div class="fx g10">
-            <div class="ph" style="width:70px;height:90px;flex:none"></div>
-            <div style="flex:1">
-              <div class="lb s">ZEGNA</div>
-              <div class="lb" style="font-size:12px">Брюки шерстяные</div>
-              <div class="lb s">Размер 48 · закреплены на 12 минут</div>
-              <div class="price">96 500 ₽</div>
-            </div>
-            <div class="lb s">✕</div>
+          <div class="card">
+            <div class="lb b" style="font-size:13px">СДЭК · Мясницкая, 24</div>
+            <div class="lb s" style="margin-top:6px">Ежедневно 09:00–22:00</div>
           </div>
         </div>
         <div class="sticky">
-          <div class="lb s" style="font-size:10.5px;margin-bottom:10px">Позиция на консультации не участвует в оформлении, пока вы не примете решение</div>
-          <div class="btn">ОФОРМИТЬ ОСТАЛЬНОЕ · 96 500 ₽</div>
-        </div>
-      </div></div>
-      <i class="mk" style="left:20px;top:150px">1</i>
-      <i class="mk" style="left:348px;top:380px">2</i>
-      <i class="mk" style="left:348px;top:520px">3</i>
-      <i class="mk" style="left:20px;top:706px">4</i>
-    </div>
-    <ol class="an">
-      <li>Корзина делится на две группы: позиции на консультации и готовые к оформлению. Это разные механики, а не конкурирующие таймеры.</li>
-      <li>У позиции на консультации виден статус обращения и срок бизнес-резерва — 15-минутный отсчёт для неё не действует.</li>
-      <li>Обычная позиция сохраняет технический резерв на оформление и показывает его как раньше.</li>
-      <li>Оформить можно остальное, не дожидаясь консультации: сумма в кнопке считается без позиции на консультации.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>E · 37</b><span>Решение после консультации</span><i>390 × 844</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Консультация завершена</div><div class="lb s"></div></div>
-        <div class="pad">
-          <div class="fx g10 center pb">
-            <div class="ph r11" style="width:34px;height:34px;border-radius:50%;flex:none"></div>
-            <div class="lb s" style="flex:1;line-height:1.45">Анна: «В этом пальто Brioni я бы взяла 50 — посадка узкая в плече. Заменила размер в вашей корзине»</div>
-          </div>
-          <div class="div"></div>
-          <div class="card" style="border-color:var(--ink);margin-bottom:18px">
-            <div class="fx g10 center">
-              <div class="ph" style="width:52px;height:66px;flex:none"></div>
-              <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12.5px">Пальто, размер 50</div><div class="lb s">368 500 ₽ · в наличии</div></div>
-            </div>
-            <div class="div" style="margin:10px 0"></div>
-            <div class="fx between center"><div class="lb s">Резерв действует</div><div class="lb s b">до 19 августа, 20:00</div></div>
-          </div>
-          <div class="btn" style="margin-bottom:9px">ОФОРМИТЬ ЗАКАЗ</div>
-          <div class="btn gh" style="margin-bottom:9px">ИЗМЕНИТЬ РАЗМЕР</div>
-          <div class="btn gh" style="margin-bottom:9px">ПРОДЛИТЬ РЕЗЕРВ</div>
-          <div class="btn gh" style="border:0">Отказаться от вещи</div>
+          <div class="fx between center pb"><div class="lb s">Стоимость и срок рассчитаются после выбора</div></div>
+          <div class="btn">ВЫБРАТЬ ЭТОТ ПУНКТ</div>
         </div>
       </div></div>
       <i class="mk" style="left:348px;top:180px">1</i>
-      <i class="mk" style="left:348px;top:390px">2</i>
-      <i class="mk" style="left:348px;top:560px">3</i>
-      <i class="mk" style="left:348px;top:700px">4</i>
+      <i class="mk" style="left:348px;top:420px">2</i>
+      <i class="mk" style="left:20px;top:700px">3</i>
     </div>
     <ol class="an">
-      <li>Резюме консультации словами менеджера: клиент видит, на чём основано решение, а не просто изменённый заказ.</li>
-      <li>Если менеджер поменял размер, позиция показана уже в новом виде — с подтверждением наличия.</li>
-      <li>Четыре равнозначных выхода: оформить, изменить размер, продлить резерв, отказаться. Отказ — обычная кнопка, а не спрятанная ссылка: для люкса это нормальный исход.</li>
-      <li>Оформление ведёт в обычный Checkout: позиция получает технический резерв и дальше сценарий не отличается.</li>
-      <li class="q">Нужно решение по продлению: кто подтверждает, сколько раз можно продлить, уведомляем ли за час до истечения.</li>
+      <li>Экран, без которого не считается стоимость доставки: разбор прямо указывает, что его не хватает.</li>
+      <li>Карта и список вместе. Пункты приходят из API СДЭК вместе с режимом работы и доступными опциями.</li>
+      <li>Стоимость и срок показываются только после выбора пункта — заранее их выводить нельзя.</li>
+      <li>В MVP один интегрируемый поставщик доставки: по договорным ограничениям это СДЭК.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 38</b><span>Оформление · упаковка, получатель, адрес</span><i>прокручивается</i></p>
+    <p class="cap"><b>E · 37</b><span>Оформление · упаковка, получатель, адрес</span><i>прокручивается</i></p>
     <div class="f tall">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:6px"><div class="lb s">‹</div><div class="lb b">Оформление</div><div class="lb s">1 / 3</div></div>
@@ -1531,12 +1502,7 @@ body.no-an .an,body.no-an .mk{display:none}
           <div class="inp" style="margin-bottom:8px">E-mail для электронного чека</div>
           <div class="lb s" style="font-size:10.5px">Понадобится только для чека — рассылок не будет</div>
           <div class="div" style="margin:18px 0"></div>
-          <div class="lb b" style="font-size:13px;margin-bottom:12px">Адрес доставки</div>
-          <div class="card" style="border-color:var(--ink)">
-            <div class="fx between center"><div class="lb b" style="font-size:12.5px">Дом</div><span class="badge">Зона VIP</span></div>
-            <div class="lb s" style="margin-top:6px">Столешников пер., 12, кв. 4</div>
-          </div>
-          <div class="fx between center" style="padding:14px 0"><div class="lb">Выбрать другой адрес</div><div class="lb s">›</div></div>
+          <div class="lb s" style="font-size:11px;line-height:1.5">Дальше — выбор адреса или пункта выдачи, затем способ доставки и расчёт стоимости.</div>
         </div>
         <div class="sticky"><div class="btn">ДАЛЕЕ · ДОСТАВКА</div></div>
       </div></div>
@@ -1549,39 +1515,34 @@ body.no-an .an,body.no-an .mk{display:none}
       <li>Выбор упаковки — обязательный шаг перед логистикой: стандартная, брендированная, подарочная.</li>
       <li>Телефон уже известен из авторизации и подставлен автоматически.</li>
       <li>Имя и e-mail собираются здесь, а не при регистрации — принцип прогрессивного профилирования. Оба поля падают в профиль.</li>
-      <li>Адрес выбирается из сохранённых или добавляется новый. От адреса зависит доступность VIP-доставки Уффици — Москва и выделенные регионы.</li>
+      <li>Адрес вынесен отдельным шагом: он может вообще не понадобиться, если клиент выбирает получение в пункте выдачи.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 39</b><span>Способ и слот доставки</span><i>прокручивается</i></p>
+    <p class="cap"><b>E · 38</b><span>Способ доставки · СДЭК</span><i>прокручивается</i></p>
     <div class="f tall">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:6px"><div class="lb s">‹</div><div class="lb b">Доставка</div><div class="lb s">2 / 3</div></div>
         <div class="pad pb"><div class="fx g4"><div style="flex:1;height:2px;background:var(--ink)"></div><div style="flex:1;height:2px;background:var(--ink)"></div><div style="flex:1;height:2px;background:var(--line)"></div></div></div>
         <div class="pad">
-          <div class="lb xs" style="margin-bottom:10px">Отправление 1 · пальто</div>
+          <div class="lb xs" style="margin-bottom:10px">Город</div>
+          <div class="inp on" style="margin-bottom:18px">Москва</div>
+          <div class="lb xs" style="margin-bottom:10px">Способ получения</div>
           <div class="card" style="border-color:var(--ink);margin-bottom:9px">
-            <div class="fx between center"><div class="lb b" style="font-size:13px">VIP-доставка Уффици</div><div class="price" style="font-size:13px">бесплатно</div></div>
-            <div class="lb s" style="margin:6px 0 12px">Курьер-консьерж, точное время до минуты</div>
-            <div class="fx g6" style="flex-wrap:wrap">
-              <div class="chip">Сегодня</div><div class="chip on">Завтра</div><div class="chip">Пт, 22</div>
-            </div>
-            <div class="fx g6" style="flex-wrap:wrap;margin-top:8px">
-              <div class="chip">12:00</div><div class="chip on">14:30</div><div class="chip">17:00</div><div class="chip">20:30</div>
-            </div>
+            <div class="fx between center"><div class="lb b" style="font-size:13px">СДЭК · пункт выдачи</div><span class="badge fill">Выбрано</span></div>
+            <div class="lb s" style="margin-top:6px">Тверская, 18 · пн–сб 10:00–21:00</div>
+            <div class="lb s" style="margin-top:8px;text-decoration:underline">Изменить пункт</div>
           </div>
-          <div class="card" style="margin-bottom:9px">
-            <div class="fx between center"><div class="lb b" style="font-size:13px">Яндекс Доставка</div><div class="price" style="font-size:13px">890 ₽</div></div>
-            <div class="lb s" style="margin-top:6px">Завтра, интервал 14:00–16:00</div>
+          <div class="card" style="margin-bottom:18px">
+            <div class="lb b" style="font-size:13px">СДЭК · курьером по адресу</div>
+            <div class="lb s" style="margin-top:6px">Столешников пер., 12, кв. 4</div>
           </div>
-          <div class="card">
-            <div class="fx between center"><div class="lb b" style="font-size:13px">Примерка в бутике</div><div class="price" style="font-size:13px">бесплатно</div></div>
-            <div class="lb s" style="margin-top:6px">Столешников пер., 12 · сообщим о готовности</div>
+          <div class="card" style="border-color:var(--ink)">
+            <div class="fx between center"><div class="lb b" style="font-size:13px">Стоимость доставки</div><div class="price" style="font-size:15px">490 ₽</div></div>
+            <div class="fx between center" style="margin-top:8px"><div class="lb s">Срок</div><div class="lb s">21 августа</div></div>
+            <div class="lb s" style="margin-top:10px;font-size:10.5px">Рассчитано после выбора пункта выдачи</div>
           </div>
-          <div class="div" style="margin:18px 0 14px"></div>
-          <div class="lb xs" style="margin-bottom:10px">Отправление 2 · брюки</div>
-          <div class="card"><div class="fx between center"><div class="lb b" style="font-size:13px">СДЭК · пункт выдачи</div><div class="price" style="font-size:13px">490 ₽</div></div><div class="lb s" style="margin-top:6px">Выбрать пункт на карте ›</div></div>
         </div>
         <div class="sticky">
           <div class="fx between center pb"><div class="lb s">Доставка за два отправления</div><div class="price">490 ₽</div></div>
@@ -1591,31 +1552,31 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:348px;top:196px">1</i>
       <i class="mk" style="left:348px;top:300px">2</i>
       <i class="mk" style="left:348px;top:338px">3</i>
-      <i class="mk" style="left:348px;top:404px">4</i>
+      <i class="mk" style="left:20px;top:466px">4</i>
       <i class="mk" style="left:18px;top:196px">5</i>
     </div>
     <ol class="an">
-      <li>VIP-доставка Уффици — собственная служба консьержей: клиент выбирает точное время, окно от 30 минут. Размытых слотов «с 10 до 18» в премиуме нет.</li>
-      <li>Партнёрская доставка (Яндекс, СДЭК) — узкие интервалы 1–2 часа, приходят по API партнёра.</li>
-      <li>Примерка в бутике — третий логистический вариант прямо в оформлении заказа.</li>
-      <li>Сплит-заказ: способ доставки выбирается отдельно для каждой ветки, стоимость складывается прозрачно.</li>
-      <li>VIP-доставка доступна в Москве и выделенных регионах — вне зоны блок скрывается.</li>
+      <li><b>Один поставщик доставки в MVP — СДЭК,</b> по договорным ограничениям. Флоу: город → способ получения → пункт или адрес → расчёт стоимости → срок.</li>
+      <li><b>Стоимость нельзя показывать заранее:</b> она считается только после выбора пункта выдачи или адреса.</li>
+      <li>Примерка в бутике — отдельный сценарий, а не способ доставки: она живёт в карточке товара и имеет собственную запись на дату и время.</li>
+      <li>Один заказ — одна служба доставки. Сплит внутри заказа исключён.</li>
+      <li class="q">VIP-доставка Уффици из прототипа убрана: в MVP по договору один интегрируемый поставщик на тип интеграции. Если собственная служба всё же остаётся, нужно отдельное решение.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 40</b><span>Оплата</span><i>390 × 844</i></p>
+    <p class="cap"><b>E · 39</b><span>Оплата</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:6px"><div class="lb s">‹</div><div class="lb b">Оплата</div><div class="lb s">3 / 3</div></div>
         <div class="pad pb"><div class="fx g4"><div style="flex:1;height:2px;background:var(--ink)"></div><div style="flex:1;height:2px;background:var(--ink)"></div><div style="flex:1;height:2px;background:var(--ink)"></div></div></div>
         <div class="pad">
           <div class="card" style="border-color:var(--ink);margin-bottom:9px">
-            <div class="fx between center"><div class="lb b" style="font-size:13px">Карта •••• 4417</div><span class="badge fill">Выбрано</span></div>
+            <div class="fx between center"><div class="lb b" style="font-size:13px">Оплата картой онлайн</div><span class="badge fill">Выбрано</span></div>
+            <div class="lb s" style="margin-top:6px">Откроется защищённая страница платёжного провайдера</div>
           </div>
-          <div class="card" style="margin-bottom:9px"><div class="lb b" style="font-size:13px">Apple Pay</div></div>
-          <div class="card" style="margin-bottom:9px"><div class="lb b" style="font-size:13px">Новая карта</div></div>
-          <div class="card"><div class="lb b" style="font-size:13px">Наличными при получении</div><div class="lb s" style="margin-top:6px">Курьеру или в бутике</div></div>
+          <div class="card" style="margin-bottom:9px"><div class="lb b" style="font-size:13px">Наличными при получении</div><div class="lb s" style="margin-top:6px">Курьеру или в пункте выдачи</div></div>
+          <div class="card" style="border-style:dashed"><div class="lb b" style="font-size:12.5px">Состав способов оплаты уточняется</div><div class="lb s" style="margin-top:6px;line-height:1.45">СБП, сохранение карты и повторная оплата — после выбора эквайера</div></div>
           <div class="div" style="margin:18px 0 12px"></div>
           <div class="fx between" style="font-size:12.5px;padding:3px 0"><div>Вещи</div><div>465 000 ₽</div></div>
           <div class="fx between" style="font-size:12.5px;padding:3px 0"><div>Доставка</div><div>490 ₽</div></div>
@@ -1624,43 +1585,56 @@ body.no-an .an,body.no-an .mk{display:none}
         <div class="sticky"><div class="btn">ОПЛАТИТЬ 465 500 ₽</div></div>
       </div></div>
       <i class="mk" style="left:348px;top:250px">1</i>
-      <i class="mk" style="left:348px;top:436px">2</i>
+      <i class="mk" style="left:348px;top:318px">2</i>
       <i class="mk" style="left:348px;top:600px">3</i>
       <i class="mk" style="left:186px;top:762px">4</i>
     </div>
     <ol class="an">
-      <li>Только российский эквайринг: карты РФ, Apple Pay, Google Pay. Международный шлюз подключается в версии 1.0.</li>
-      <li>Оплата наличными курьеру или в бутике — равноправный способ, а не исключение.</li>
+      <li><b>Экран сделан нейтральным.</b> Apple Pay убран — в России не работает. Конкретный банк, набор методов, привязка карты и СБП визуально не фиксируются.</li>
+      <li>В MVP по договору один российский платёжный провайдер. У большинства провайдеров выбор способа происходит на их странице — вероятен переход в WebView.</li>
       <li>Итоговая сумма, валюта списания и способ оплаты явно зафиксированы на экране до подтверждения.</li>
-      <li>Подтверждение платежа — 3-D Secure на стороне банка: код из SMS или пуш банковского приложения. Отказ шлюза возвращает на выбор способа с понятным текстом.</li>
-      <li class="q">Биометрия на этом шаге — открытый вопрос. Протокол встречи вернул Face ID и Touch ID для повторного входа, но про подтверждение оплаты решения нет. Сейчас в кадре только 3-D Secure банка; если биометрия нужна и здесь, кнопка станет «Оплатить · Face ID».</li>
+      <li>Подтверждение платежа — 3-D Secure на стороне банка. Отказ возвращает на выбор способа с понятным текстом.</li>
+      <li class="q">Финальный флоу зависит от эквайера: WebView или нативная форма, сохранение карты, СБП, повторная оплата без перехода на страницу провайдера. До ответа клиента интерфейс остаётся нейтральным.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>E · 41</b><span>Заказ оформлен</span><i>390 × 844</i></p>
+    <p class="cap"><b>E · 40</b><span>Заказ оформлен</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body pad" style="padding-top:60px">
         <div style="width:46px;height:46px;border:1.5px solid var(--ink);border-radius:50%;margin-bottom:22px"></div>
         <div class="lb h">Заказ 4417 принят</div>
         <div class="lb s" style="margin:12px 0 26px">Чек отправили на почту. Менеджер свяжется, если потребуется уточнение.</div>
-        <div class="card" style="margin-bottom:9px">
-          <div class="fx between center"><div class="lb b" style="font-size:12.5px">Отправление 1 · пальто</div><span class="badge">VIP</span></div>
-          <div class="lb s" style="margin-top:6px">Завтра к 14:30, курьер-консьерж</div>
+        <div class="card" style="border-color:var(--ink);margin-bottom:14px">
+          <div class="fx between center"><div class="lb b" style="font-size:13px">СДЭК · пункт выдачи</div><span class="badge">21 августа</span></div>
+          <div class="lb s" style="margin-top:6px">Тверская, 18 · пн–сб 10:00–21:00</div>
         </div>
-        <div class="card">
-          <div class="fx between center"><div class="lb b" style="font-size:12.5px">Отправление 2 · брюки</div><span class="badge">СДЭК</span></div>
-          <div class="lb s" style="margin-top:6px">21 августа, пункт выдачи на Тверской</div>
+        <div class="lb xs" style="margin-bottom:10px">В заказе 2 вещи</div>
+        <div class="fx g10 center" style="padding-bottom:12px;border-bottom:1px solid var(--line)">
+          <div class="ph" style="width:52px;height:66px;flex:none"></div>
+          <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12px">Пальто из кашемира</div><div class="lb s">Размер 48</div></div>
+          <div class="lb s">368 500 ₽</div>
+        </div>
+        <div class="fx g10 center" style="padding:12px 0">
+          <div class="ph" style="width:52px;height:66px;flex:none"></div>
+          <div style="flex:1"><div class="lb s">ZEGNA</div><div class="lb" style="font-size:12px">Брюки шерстяные</div><div class="lb s">Размер 48</div></div>
+          <div class="lb s">96 500 ₽</div>
+        </div>
+        <div class="fx between center" style="padding-top:10px;border-top:1px solid var(--line)">
+          <div class="lb b">Оплачено</div><div class="price" style="font-size:16px">465 500 ₽</div>
         </div>
         <div class="btn" style="margin-top:22px">СТАТУС ЗАКАЗА</div>
         <div class="btn gh" style="margin-top:9px">НА ГЛАВНУЮ</div>
       </div></div>
       <i class="mk" style="left:348px;top:330px">1</i>
-      <i class="mk" style="left:348px;top:520px">2</i>
+      <i class="mk" style="left:348px;top:450px">2</i>
+      <i class="mk" style="left:348px;top:690px">3</i>
     </div>
     <ol class="an">
-      <li>Сроки показаны по каждой ветке сплит-заказа отдельно, в тех же формулировках, что и на шаге доставки.</li>
+      <li><b>Одна служба доставки на весь заказ.</b> Способ, дата и место получения указаны один раз — вариант с разными службами внутри заказа исключён.</li>
+      <li>Все вещи заказа перечислены списком под блоком доставки: фото, бренд, название, размер и цена. Они едут вместе, одной отправкой.</li>
       <li>Электронный чек уходит на e-mail, собранный на шаге получателя. Дублирующий push — о статусе.</li>
+      <li class="q">Если клиенту нужны разные способы доставки, это два отдельных заказа. Сценарий разделения корзины на два заказа в разборе не описан — нужно решение.</li>
     </ol>
   </div>
 
@@ -1673,7 +1647,7 @@ body.no-an .an,body.no-an .mk{display:none}
 <div class="wall">
 
   <div class="item">
-    <p class="cap"><b>F · 42</b><span>Вишлист</span><i>390 × 844</i></p>
+    <p class="cap"><b>F · 41</b><span>Вишлист</span><i>390 × 844</i></p>
     <div class="f" data-tab="wish">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb h2">Вишлист</div><div class="lb s">Изменить</div></div>
@@ -1689,13 +1663,14 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Простой список избранного: сетка, статус наличия под ценой, быстрое удаление.</li>
-      <li>Бренды из вишлиста питают блок Brand Spotlight на витрине. Список доступен офлайн.</li>
-      <li class="q">Push о поступлении и снижении цены — версия 1.0. Пустое состояние списка в ТЗ не описано.</li>
+      <li>Бренды из вишлиста питают блок «Ваши бренды» на витрине.</li>
+      <li><b>Только для авторизованных.</b> Гость, нажавший вкладку или сердечко, попадает на существующий экран входа с кнопкой «Пропустить» — отдельную модалку не делаем.</li>
+      <li class="q">Пустое состояние списка в разборе не описано — нужен текст и переход в каталог.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>F · 43</b><span>История заказов</span><i>390 × 844</i></p>
+    <p class="cap"><b>F · 42</b><span>История заказов</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px"><div class="lb s">‹</div><div class="lb b">Мои заказы</div><div class="lb s">Фильтр</div></div>
@@ -1707,7 +1682,7 @@ body.no-an .an,body.no-an .mk{display:none}
           </div>
           <div class="card" style="margin-bottom:10px">
             <div class="fx between center"><div class="lb b" style="font-size:13px">Заказ 4390</div><span class="badge">В пути</span></div>
-            <div class="lb s" style="margin:8px 0 10px">Завтра к 14:30 · VIP-доставка</div>
+            <div class="lb s" style="margin:8px 0 10px">21 августа · СДЭК, Тверская, 18</div>
             <div class="fx g6"><div class="ph" style="width:44px;height:56px"></div></div>
           </div>
           <div class="card">
@@ -1731,49 +1706,57 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>F · 44</b><span>Статус заказа и брони</span><i>прокручивается</i></p>
+    <p class="cap"><b>F · 43</b><span>Статус заказа и брони</span><i>прокручивается</i></p>
     <div class="f tall">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Заказ 4417</div><div class="lb s"></div></div>
         <div class="pad">
-          <div class="card" style="border-color:var(--bordeaux);margin-bottom:18px">
-            <div class="lb b" style="font-size:13px">Вещи ждут вас до 18:00 завтра</div>
-            <div class="lb s" style="margin-top:6px">Столешников пер., 12 · ежедневно 11:00–22:00</div>
+          <div class="card" style="border-color:var(--ink);margin-bottom:18px">
+            <div class="fx between center"><div class="lb b" style="font-size:13px">СДЭК · пункт выдачи</div><span class="badge warn">В пути</span></div>
+            <div class="lb s" style="margin-top:6px">Тверская, 18 · ожидается 21 августа</div>
+            <div class="fx between center" style="margin-top:10px"><div class="lb s">Трек-номер 1043882914</div><div class="lb s" style="text-decoration:underline">Копировать</div></div>
           </div>
           <div class="tl">
-            <div class="st done"><div class="lb b" style="font-size:12.5px">Ваш образ собирается</div><div class="lb s">18 августа, 12:04</div></div>
-            <div class="st done"><div class="lb b" style="font-size:12.5px">В пути в бутик</div><div class="lb s">18 августа, 16:20</div></div>
-            <div class="st now"><div class="lb b" style="font-size:12.5px">Готов к примерке</div><div class="lb s">Сегодня, 10:15 · отправили уведомление</div></div>
+            <div class="st done"><div class="lb b" style="font-size:12.5px">Заказ принят</div><div class="lb s">18 августа, 12:04</div></div>
+            <div class="st done"><div class="lb b" style="font-size:12.5px">Собираем ваш заказ</div><div class="lb s">18 августа, 16:20</div></div>
+            <div class="st now"><div class="lb b" style="font-size:12.5px">В пути в пункт выдачи</div><div class="lb s">Сегодня, 10:15</div></div>
+            <div class="st"><div class="lb b" style="font-size:12.5px">Готов к получению</div><div class="lb s">Сообщим, когда можно забрать</div></div>
           </div>
           <div class="div"></div>
-          <div class="lb xs" style="margin-bottom:10px">Отправление 2 · курьером</div>
-          <div class="card" style="margin-bottom:14px">
-            <div class="fx between center"><div class="lb b" style="font-size:12.5px">СДЭК · в пути</div><span class="badge">21 августа</span></div>
-            <div class="fx between center" style="margin-top:8px"><div class="lb s">Трек-номер 1043882914</div><div class="lb s" style="text-decoration:underline">Копировать</div></div>
+          <div class="lb xs" style="margin-bottom:10px">В заказе 2 вещи · едут вместе</div>
+          <div class="fx g10 center" style="padding-bottom:12px;border-bottom:1px solid var(--line)">
+            <div class="ph" style="width:52px;height:66px;flex:none"></div>
+            <div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12px">Пальто из кашемира</div><div class="lb s">Размер 48</div></div>
+            <div class="lb s">368 500 ₽</div>
           </div>
-          <div class="lb xs" style="margin-bottom:10px">Состав</div>
-          <div class="fx g10 center"><div class="ph" style="width:52px;height:66px"></div><div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12px">Пальто, размер 48</div></div></div>
+          <div class="fx g10 center" style="padding:12px 0">
+            <div class="ph" style="width:52px;height:66px;flex:none"></div>
+            <div style="flex:1"><div class="lb s">ZEGNA</div><div class="lb" style="font-size:12px">Брюки шерстяные</div><div class="lb s">Размер 48</div></div>
+            <div class="lb s">96 500 ₽</div>
+          </div>
+          <div class="fx between center" style="padding-top:10px;border-top:1px solid var(--line)">
+            <div class="lb b">Оплачено</div><div class="price" style="font-size:16px">465 500 ₽</div>
+          </div>
         </div>
         <div class="sticky"><div class="btn gh">НАПИСАТЬ МЕНЕДЖЕРУ</div></div>
       </div></div>
-      <i class="mk" style="left:348px;top:180px">1</i>
-      <i class="mk" style="left:348px;top:330px">2</i>
-      <i class="mk" style="left:348px;top:520px">3</i>
+      <i class="mk" style="left:348px;top:200px">1</i>
+      <i class="mk" style="left:348px;top:400px">2</i>
+      <i class="mk" style="left:348px;top:640px">3</i>
       <i class="mk" style="left:186px;top:878px">4</i>
     </div>
     <ol class="an">
-      <li>Срок сгорания брони — первый и самый заметный элемент экрана, сформулирован по-человечески.</li>
-      <li>Две независимые дорожки: сверху активное сервисное обращение — консультация со своим резервом, ниже исполнение заказа. В один таймлайн они не сливаются; после закрытия обращения блок уходит в историю.</li>
-      <li>Цепочка статусов вместо логистических кодов: «Ваш образ собирается» → «В пути в бутик» → «Готов к примерке». Третий статус — триггер автоматического push или e-mail.</li>
-      <li>Вторая ветка сплит-заказа: трек-номер курьерской службы и сквозной статус по её API, с возможностью скопировать номер.</li>
+      <li><b>Одна служба доставки на весь заказ:</b> способ, место получения, дата и трек-номер указаны один раз. Ветки с разными службами внутри заказа исключены.</li>
+      <li>Одна цепочка статусов на заказ, в человеческих формулировках: принят → собираем → в пути → готов к получению.</li>
+      <li>Все вещи заказа перечислены списком с пометкой, что они едут вместе одной отправкой.</li>
       <li>Связь с персональным менеджером прямо из экрана заказа.</li>
-      <li class="q">Без зафиксированного тайм-аута брони текст «до 18:00 завтра» остаётся заглушкой.</li>
+      <li>Запись на примерку — отдельная сущность со своими экранами и своей карточкой в истории: в статус заказа она не встраивается.</li>
       <li class="q">Клиентские статусы предварительные: внутренние состояния кастомной системы — выезд, резерв, частичная оплата, ожидание — нужно превратить в понятные сервисные формулировки. До таблицы mapping состав дорожки может измениться.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>F · 45</b><span>Push-уведомления</span><i>экран блокировки</i></p>
+    <p class="cap"><b>F · 44</b><span>Push-уведомления</span><i>экран блокировки</i></p>
     <div class="f">
       <div class="scr"><div class="body" style="background:var(--paper-2)">
         <div style="text-align:center;padding:46px 0 30px">
@@ -1803,15 +1786,15 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:348px;top:500px">3</i>
     </div>
     <ol class="an">
-      <li>Статус «Готов к примерке» — ключевой триггер: система автоматически отправляет push или e-mail, в тексте сразу указан срок брони.</li>
-      <li>Статусы заказа и доставки. Тап по уведомлению открывает экран статуса заказа, а не главную.</li>
+      <li><b>В MVP пуши только текстовые.</b> Внешний вид системный и отличается в зависимости от вендора и версии ОС — в макете он условный.</li>
+      <li>Тап по уведомлению открывает соответствующий экран приложения — это единственное требование к пушам в MVP.</li>
       <li>Триггерные подборки при неактивности и уведомления о поступлении по вишлисту относятся к версии 1.0 — в MVP этих push нет.</li>
       <li>Каналы push и e-mail включаются в настройках уведомлений в профиле.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>F · 46</b><span>Чат с менеджером</span><i>390 × 844</i></p>
+    <p class="cap"><b>F · 45</b><span>Чат с менеджером</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx g10 center" style="padding-top:10px;padding-bottom:12px;border-bottom:1px solid var(--line)">
@@ -1833,59 +1816,19 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:348px;top:600px">4</i>
     </div>
     <ol class="an">
-      <li>Менеджер назначается по правилам RetailCRM: новый клиент попадает в пул дежурных по круговой очереди, после покупки закрепляется персональный менеджер, при его отсутствии диалог уходит курирующему.</li>
+      <li>Точки входа: профиль, карточка товара, пустая выдача поиска и запрос консьержу. Чат связан с RetailCRM.</li>
+      <li>Менеджер назначается по правилам CRM: новый клиент — в пул дежурных, после покупки закрепляется персональный менеджер.</li>
       <li>Консультации по наличию, размерам и статусам, консьерж-запрос на редкие позиции. Сотрудник отвечает из мессенджера через CRM, для клиента это выглядит нативным чатом.</li>
       <li>Обмен текстом, фото, видео, ссылками и <b>голосовыми сообщениями</b> в обе стороны: премиум-клиенту часто удобнее надиктовать, чем печатать.</li>
-      <li class="q">Способ интеграции RetailCRM не выбран: готовый виджет, стилизованный виджет или собственный фронтенд на API. От этого зависят стоимость и поддержка голосовых. До решения кадры чата — предложение по композиции.</li>
+      <li><b>Не реализуем в MVP:</b> предзаданные ответы, автоматические ветки диалога, «Запланировать звонок» и выбор временного слота. «Связаться с менеджером» = «Написать в чат».</li>
+      <li class="q">Способ интеграции RetailCRM не выбран: виджет, стилизованный виджет или собственный фронтенд. От этого зависят стоимость и поддержка голосовых.</li>
     </ol>
   </div>
 
 </div>
 
   <div class="item">
-    <p class="cap"><b>F · 47</b><span>Диалог консультации</span><i>390 × 844</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="pad fx g10 center" style="padding-top:10px;padding-bottom:12px;border-bottom:1px solid var(--line)">
-          <div class="lb s">‹</div>
-          <div class="ph r11" style="width:34px;height:34px;border-radius:50%;flex:none"></div>
-          <div style="flex:1"><div class="lb b" style="font-size:13px">Анна · ваш менеджер</div><div class="lb s" style="font-size:10.5px">консультация по размеру</div></div>
-        </div>
-        <div class="fx g8 center" style="padding:10px 18px;background:var(--paper-2)">
-          <div class="ph" style="width:36px;height:46px;flex:none"></div>
-          <div style="flex:1"><div class="lb s" style="font-size:10.5px">BRIONI · пальто, 48</div><div class="lb s" style="font-size:10.5px">Резерв до 20:00</div></div>
-          <div class="lb s" style="font-size:10.5px">К корзине ›</div>
-        </div>
-        <div class="pad" style="padding-top:14px">
-          <div class="msg out" style="margin-bottom:10px">Сомневаюсь между 48 и 50, обычно ношу 48</div>
-          <div class="msg in" style="margin-bottom:10px">Добрый день! У этой модели узкое плечо. Уточните, носите пиджаки свободно или по фигуре?</div>
-          <div class="fx center g8" style="margin-bottom:10px;justify-content:flex-end">
-            <div class="msg out" style="display:flex;align-items:center;gap:8px;padding:11px 14px">
-              <span style="font-size:13px">▶</span>
-              <span style="flex:1;height:14px;background:repeating-linear-gradient(90deg,#F7F6F2 0 2px,transparent 2px 4px);display:block;min-width:96px"></span>
-              <span style="font-size:10.5px">0:14</span>
-            </div>
-          </div>
-          <div class="msg in">Поняла, тогда 50. Заменю размер в корзине и вернусь с подтверждением наличия.</div>
-        </div>
-        <div class="sticky"><div class="fx g8 center"><div class="lb s">＋</div><div class="inp" style="flex:1;height:40px">Сообщение</div><div class="lb b" style="font-size:15px">◉</div></div></div>
-      </div></div>
-      <i class="mk" style="left:348px;top:150px">1</i>
-      <i class="mk" style="left:348px;top:400px">2</i>
-      <i class="mk" style="left:348px;top:530px">3</i>
-      <i class="mk" style="left:186px;top:762px">4</i>
-    </div>
-    <ol class="an">
-      <li>Контекст обращения закреплён под шапкой: товар, размер, срок резерва и быстрый путь в корзину. Без него менеджер и клиент говорят про разные вещи.</li>
-      <li>Диалог тот же, что обычный чат, — отдельного мессенджера для консультации не появляется.</li>
-      <li>Голосовое сообщение от клиента: для премиум-аудитории надиктовать удобнее, чем печатать. Работает в обе стороны.</li>
-      <li>Кнопка микрофона стоит на месте отправки: тап — запись, свайп — отмена.</li>
-      <li class="q">Поддержка голосовых зависит от способа интеграции RetailCRM: готовый виджет может их не отдавать. До решения по архитектуре чата кадр остаётся предложением.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>F · 48</b><span>Запись голосового сообщения</span><i>390 × 844</i></p>
+    <p class="cap"><b>F · 46</b><span>Запись голосового сообщения</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx g10 center" style="padding-top:10px;padding-bottom:12px;border-bottom:1px solid var(--line)">
@@ -1923,7 +1866,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>F · 49</b><span>Подборка от менеджера</span><i>390 × 844 · предложение</i></p>
+    <p class="cap"><b>F · 47</b><span>Подборка от менеджера</span><i>390 × 844 · предложение</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Подборка для вас</div><div class="lb s"></div></div>
@@ -1961,8 +1904,8 @@ body.no-an .an,body.no-an .mk{display:none}
 <div class="wall">
 
   <div class="item">
-    <p class="cap"><b>G · 50</b><span>Личный кабинет</span><i>390 × 844</i></p>
-    <div class="f">
+    <p class="cap"><b>G · 48</b><span>Личный кабинет</span><i>прокручивается</i></p>
+    <div class="f" style="height:920px">
       <div class="scr"><div class="body">
         <div class="pad" style="padding-top:16px;padding-bottom:20px">
           <div class="lb h">Александр</div>
@@ -1984,6 +1927,9 @@ body.no-an .an,body.no-an .mk{display:none}
           <div class="row">Способы оплаты <s>›</s></div>
           <div class="row">Уведомления <s>›</s></div>
           <div class="row">Конфиденциальность <s>›</s></div>
+          <div class="div" style="margin:14px 0 4px"></div>
+          <div class="row">Выйти из аккаунта <s>›</s></div>
+          <div class="row" style="color:var(--bordeaux)">Удалить аккаунт <s>›</s></div>
           <div class="row">Чат с менеджером <s>›</s></div>
         </div>
       </div></div>
@@ -1996,12 +1942,13 @@ body.no-an .an,body.no-an .mk{display:none}
       <li>Мягкое приглашение заполнить профиль вместо принудительной анкеты на входе. Скрывается после заполнения.</li>
       <li>Разделы соответствуют колонке G блок-схемы. Возвраты и лояльность появятся в версии 1.0.</li>
       <li>Строка «Закрытые предложения» показывает статус доступа и ведёт в управление подпиской.</li>
-      <li>«Мои размеры» ведут в раздел с базовыми и индивидуальными размерами по брендам, «Услуги и заявки» — в раздел H.</li>
+      <li>Внизу списка — «Выйти из аккаунта» и «Удалить аккаунт», перенесённые сюда из раздела конфиденциальности.</li>
+      <li class="q">Определение стиля из профиля убрано по решению разбора: это рекомендательная функциональность, в MVP не входит. Раздел сокращён до любимых брендов.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 51</b><span>Личные данные</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 49</b><span>Личные данные</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Личные данные</div><div class="lb s">Готово</div></div>
@@ -2036,7 +1983,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 52</b><span>Адреса доставки</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 50</b><span>Адреса доставки</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Адреса доставки</div><div class="lb s"></div></div>
@@ -2044,17 +1991,17 @@ body.no-an .an,body.no-an .mk{display:none}
           <div class="card" style="border-color:var(--ink);margin-bottom:10px">
             <div class="fx between center"><div class="lb b" style="font-size:13px">Дом</div><span class="badge fill">По умолчанию</span></div>
             <div class="lb s" style="margin-top:6px">Столешников пер., 12, кв. 4</div>
-            <div class="fx between center" style="margin-top:10px"><span class="badge">Зона VIP-доставки</span><div class="lb s">Изменить</div></div>
+            <div class="fx between center" style="margin-top:10px"><span class="badge">Москва</span><div class="lb s">Изменить</div></div>
           </div>
           <div class="card" style="margin-bottom:10px">
             <div class="fx between center"><div class="lb b" style="font-size:13px">Офис</div><div class="lb s">✕</div></div>
             <div class="lb s" style="margin-top:6px">Пресненская наб., 8, стр. 1</div>
-            <div class="fx between center" style="margin-top:10px"><span class="badge">Зона VIP-доставки</span><div class="lb s">Изменить</div></div>
+            <div class="fx between center" style="margin-top:10px"><span class="badge">Москва</span><div class="lb s">Изменить</div></div>
           </div>
           <div class="card" style="margin-bottom:18px;opacity:.6">
             <div class="lb b" style="font-size:13px">Загородный</div>
             <div class="lb s" style="margin-top:6px">Одинцовский р-н, кп Лесной</div>
-            <div class="fx between center" style="margin-top:10px"><span class="badge">Партнёрская доставка</span><div class="lb s">Изменить</div></div>
+            <div class="fx between center" style="margin-top:10px"><span class="badge">Московская обл.</span><div class="lb s">Изменить</div></div>
           </div>
           <div class="btn gh">ДОБАВИТЬ АДРЕС</div>
         </div>
@@ -2065,13 +2012,13 @@ body.no-an .an,body.no-an .mk{display:none}
     </div>
     <ol class="an">
       <li>Сохранённые адреса из требований к личному кабинету. Этот же экран открывается из шага оформления заказа.</li>
-      <li>У каждого адреса видно, какая логистика доступна: VIP-доставка Уффици работает в Москве и выделенных регионах, вне зоны остаётся партнёрская.</li>
+      <li>Город в адресе нужен для расчёта стоимости и срока доставки: без него служба не считает тариф.</li>
       <li>Новый адрес можно добавить и здесь, и на Checkout — данные общие.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 53</b><span>Уведомления</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 51</b><span>Уведомления</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Уведомления</div><div class="lb s"></div></div>
@@ -2112,38 +2059,32 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 54</b><span>Стиль и любимые бренды</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 52</b><span>Любимые бренды</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
-        <div class="pad fx between center" style="padding-top:10px;padding-bottom:10px"><div class="lb s">‹</div><div class="lb b">Стиль и бренды</div><div class="lb s">Готово</div></div>
+        <div class="pad fx between center" style="padding-top:10px;padding-bottom:10px"><div class="lb s">‹</div><div class="lb b">Любимые бренды</div><div class="lb s">Готово</div></div>
         <div class="pad">
-          <div class="lb xs" style="margin-bottom:10px">Определение стиля · 4 из 12</div>
-          <div class="ph r23" style="height:300px">
-            <div style="position:absolute;left:0;right:0;bottom:0;padding:14px" class="fx between">
-              <div class="chip" style="background:var(--paper)">✕ Не моё</div>
-              <div class="chip on">♥ Нравится</div>
-            </div>
-          </div>
-          <div class="lb s" style="margin-top:10px;text-align:center;font-size:10.5px">Свайпните вправо или влево</div>
-          <div class="div" style="margin:18px 0 14px"></div>
-          <div class="lb xs" style="margin-bottom:10px">Любимые бренды</div>
-          <div class="grid3">
+          <div class="lb s" style="line-height:1.5;margin-bottom:16px">Отметьте дома, которые вам интересны, — их новинки попадут в блок «Ваши бренды» на главной</div>
+          <div class="inp" style="margin-bottom:16px">Поиск по брендам</div>
+          <div class="grid3" style="margin-bottom:14px">
+            <div class="ph r11" style="box-shadow:0 0 0 1.4px var(--ink)"></div><div class="ph r11"></div><div class="ph r11" style="box-shadow:0 0 0 1.4px var(--ink)"></div>
             <div class="ph r11"></div><div class="ph r11"></div><div class="ph r11"></div>
           </div>
+          <div class="lb s" style="font-size:10.5px">Выбрано 2 бренда</div>
         </div>
       </div></div>
       <i class="mk" style="left:348px;top:200px">1</i>
       <i class="mk" style="left:348px;top:560px">2</i>
     </div>
     <ol class="an">
-      <li>Та же механика, что планировалась в онбординге: полноэкранные образы и свайп. Текстовых списков с чекбоксами нет.</li>
-      <li>Бренды выбираются крупными визуальными карточками. Данные питают ленту «Для вас» и Brand Spotlight.</li>
+      <li class="q"><b>Определение стиля убрано из MVP</b> по решению разбора: это отдельная рекомендательная функциональность, требующая проработки и на стороне заказчика, и на стороне разработки. Осталась только отметка любимых брендов.</li>
+      <li>Бренды выбираются крупными визуальными карточками и питают блок «Ваши бренды» на главной.</li>
       <li>Прогресс сохраняется: раздел можно закрыть на любом шаге и вернуться позже.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 55</b><span>Мои размеры</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 53</b><span>Мои размеры</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Мои размеры</div><div class="lb s">Готово</div></div>
@@ -2151,144 +2092,34 @@ body.no-an .an,body.no-an .mk{display:none}
           <div class="fx g6 pb"><div class="chip on">EU</div><div class="chip">US</div><div class="chip">UK</div></div>
           <div class="lb s" style="font-size:10.5px;margin-bottom:16px">Размеры конвертируются автоматически</div>
           <div class="lb xs" style="margin-bottom:10px">Одежда</div>
-          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:20px"><div class="chip">46</div><div class="chip on">48</div><div class="chip">50</div><div class="chip">52</div></div>
+          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:8px"><div class="chip">46</div><div class="chip on">48</div><div class="chip on">50</div><div class="chip">52</div></div>
+          <div class="lb s" style="font-size:10.5px;margin-bottom:20px">Можно отметить несколько подходящих размеров</div>
           <div class="lb xs" style="margin-bottom:10px">Обувь</div>
-          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:20px"><div class="chip">40</div><div class="chip on">41</div><div class="chip">42</div><div class="chip">43</div></div>
+          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:20px"><div class="chip">40</div><div class="chip on">41</div><div class="chip on">42</div><div class="chip on">43</div></div>
           <div class="row">Сорочки <s>Не указан ›</s></div>
           <div class="row">Головные уборы <s>Не указан ›</s></div>
-          <div class="div" style="margin:18px 0 12px"></div>
-          <div class="lb xs" style="margin-bottom:10px">Индивидуальные размеры</div>
-          <div class="card" style="border-color:var(--ink)">
-            <div class="fx between center">
-              <div style="flex:1;padding-right:12px">
-                <div class="lb b" style="font-size:12.5px">Размеры по брендам</div>
-                <div class="lb s" style="margin-top:5px;font-size:10.5px">4 записи · Brioni 48, Zegna 50 …</div>
-              </div>
-              <div class="lb s">›</div>
-            </div>
-          </div>
+
         </div>
       </div></div>
       <i class="mk" style="left:348px;top:150px">1</i>
       <i class="mk" style="left:348px;top:262px">2</i>
     </div>
     <ol class="an">
-      <li>Раздел разделён на два уровня: <b>базовые размеры</b> и <b>индивидуальные размеры по брендам</b>. Простого «носит 48 → показываем всё 48» недостаточно: у одного дома клиент берёт 48, у другого 50.</li>
+      <li><b>Можно отметить несколько размеров сразу</b> — например 41, 42 и 43. Выбор одним размером не ограничивается.</li>
       <li>Переключатель систем US / EU / UK с автоконвертацией — единая логика с гидом по размерам бренда.</li>
-      <li>Базовые размеры включают подсказку «Ваш размер» в каталоге и карточке. Индивидуальная запись по бренду перекрывает базовую.</li>
-      <li class="q">Модель хранения — рабочая гипотеза: клиент просил не цементировать решение до полноценной проработки. Открыто, храним размер или поправку к базовому и до какого уровня детализируем категорию.</li>
+      <li>Отмеченные размеры включают подсказку «Ваш размер» в каталоге и карточке и фильтр по своим размерам.</li>
+      <li class="q"><b>Индивидуальные размеры по брендам исключены из MVP</b> решением разбора: автоматическое сопоставление и рекомендации вида «в Kiton вам X, в Brunello Y» — развитие после появления корректных размерных данных. Это расходится с протоколом встречи, где бренд-размеры были главным результатом.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 56</b><span>Индивидуальные размеры по брендам</span><i>390 × 844</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Размеры по брендам</div><div class="lb s">+</div></div>
-        <div class="pad">
-          <div class="lb s" style="line-height:1.5;margin-bottom:18px">У разных домов посадка отличается. Здесь хранится размер, который вам подходит именно в этом бренде и категории.</div>
-          <div class="lb xs" style="margin-bottom:10px">Верхняя одежда</div>
-          <div class="row">Brioni <s>48 ›</s></div>
-          <div class="row">Loro Piana <s>50 ›</s></div>
-          <div class="lb xs" style="margin:22px 0 10px">Обувь</div>
-          <div class="row">Church&rsquo;s <s>41 ›</s></div>
-          <div class="row">Tod&rsquo;s <s>41,5 ›</s></div>
-          <div class="lb xs" style="margin:22px 0 10px">Базовый размер</div>
-          <div class="row">Одежда · EU <s>48 ›</s></div>
-          <div class="row">Обувь · EU <s>41 ›</s></div>
-        </div>
-        <div class="sticky"><div class="btn gh">ДОБАВИТЬ БРЕНД</div></div>
-      </div></div>
-      <i class="mk" style="left:348px;top:150px">1</i>
-      <i class="mk" style="left:348px;top:300px">2</i>
-      <i class="mk" style="left:300px;top:500px">3</i>
-      <i class="mk" style="left:186px;top:762px">4</i>
-    </div>
-    <ol class="an">
-      <li>Гипотеза модели: связка <b>пользователь → категория → бренд → привычный размер</b>. Глобальную «погрешность бренда» задавать нельзя — она индивидуальна для каждого человека.</li>
-      <li>Размеры сгруппированы по категориям: в верхней одежде и обуви у одного и того же бренда посадка разная.</li>
-      <li>Базовый размер остаётся как значение по умолчанию: он применяется там, где бренд-размера ещё нет.</li>
-      <li>Записи появляются двумя путями: вручную здесь и автоматически из контекстного вопроса после примерки, экран 58.</li>
-      <li class="q">Решение сознательно не цементируем: клиент просил проработать модель до UI. Открыто, храним ли мы размер или поправку к базовому, и до какого уровня детализируем категорию.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>G · 57</b><span>Добавление размера бренда</span><i>модальный лист</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="pad" style="padding-top:14px;opacity:.5">
-          <div class="row">Brioni <s>48 ›</s></div>
-          <div class="row">Loro Piana <s>50 ›</s></div>
-        </div>
-        <div class="dim"></div>
-        <div class="sheet">
-          <div class="lb h2" style="margin-bottom:16px">Размер в бренде</div>
-          <div class="lb xs" style="margin-bottom:8px">Бренд</div>
-          <div class="inp on" style="margin-bottom:14px">Zegna</div>
-          <div class="lb xs" style="margin-bottom:8px">Категория</div>
-          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:14px">
-            <div class="chip on">Костюмы</div><div class="chip">Верхняя одежда</div><div class="chip">Сорочки</div>
-          </div>
-          <div class="lb xs" style="margin-bottom:8px">Ваш размер здесь</div>
-          <div class="fx g6" style="flex-wrap:wrap;margin-bottom:8px">
-            <div class="chip">48</div><div class="chip on">50</div><div class="chip">52</div>
-          </div>
-          <div class="lb s" style="font-size:10.5px;margin-bottom:16px">Базовый размер — 48. В этом бренде вы берёте на размер больше.</div>
-          <div class="btn">СОХРАНИТЬ</div>
-        </div>
-      </div></div>
-      <i class="mk" style="left:348px;top:400px">1</i>
-      <i class="mk" style="left:348px;top:560px">2</i>
-      <i class="mk" style="left:348px;top:690px">3</i>
-    </div>
-    <ol class="an">
-      <li>Три поля и ничего больше: бренд, категория, размер. Всё остальное система знает сама.</li>
-      <li>Категории предлагаются те, что реально есть у бренда в каталоге — список приходит из API.</li>
-      <li>Подсказка про расхождение с базовым размером объясняет клиенту, что именно он сохраняет.</li>
-      <li class="q">Нужно решение, сколько записей на бренд допускается: одна на категорию или несколько на линейку внутри категории.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>G · 58</b><span>Контекстный вопрос о размере</span><i>модальный лист</i></p>
-    <div class="f">
-      <div class="scr"><div class="body">
-        <div class="pad fx between center" style="padding-top:10px;padding-bottom:12px"><div class="lb s">‹</div><div class="lb b">Заказ 4417</div><div class="lb s"></div></div>
-        <div class="pad" style="opacity:.5">
-          <div class="fx g10 center"><div class="ph" style="width:52px;height:66px"></div><div style="flex:1"><div class="lb s">BRIONI</div><div class="lb" style="font-size:12px">Пальто, размер 48</div></div></div>
-        </div>
-        <div class="dim"></div>
-        <div class="sheet">
-          <div class="lb h2">Размер подошёл?</div>
-          <div class="lb s" style="margin:8px 0 18px">Brioni · пальто, размер 48. Ответ поможет точнее подбирать вещи этого дома.</div>
-          <div class="btn" style="margin-bottom:8px">ДА, ЭТО МОЙ РАЗМЕР</div>
-          <div class="btn gh" style="margin-bottom:8px">БЫЛО МАЛО</div>
-          <div class="btn gh">БЫЛО ВЕЛИКО</div>
-          <div class="btn gh" style="border:0;margin-top:4px">Не отвечать</div>
-        </div>
-      </div></div>
-      <i class="mk" style="left:348px;top:470px">1</i>
-      <i class="mk" style="left:348px;top:600px">2</i>
-      <i class="mk" style="left:348px;top:790px">3</i>
-    </div>
-    <ol class="an">
-      <li>Главный источник данных для бренд-мэппинга: вопрос задаётся после получения заказа или примерки в бутике, когда клиент уже надел вещь.</li>
-      <li>«Да» сохраняет размер для этого бренда и категории. «Мало» и «велико» сдвигают запись на шаг и предлагают уточнить.</li>
-      <li>Один вопрос — один экран. «Не отвечать» не повторяется по этой позиции.</li>
-      <li class="q">Нужно решить, где ещё спрашивать: после возврата с причиной «не подошёл размер» это самый честный сигнал, но он же самый болезненный момент.</li>
-    </ol>
-  </div>
-
-  <div class="item">
-    <p class="cap"><b>G · 59</b><span>Способы оплаты</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 54</b><span>Способы оплаты</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Способы оплаты</div><div class="lb s"></div></div>
         <div class="pad">
           <div class="card" style="margin-bottom:9px"><div class="fx between center"><div><div class="lb b" style="font-size:13px">Карта •••• 4417</div><div class="lb s" style="margin-top:4px">По умолчанию</div></div><div class="lb s">✕</div></div></div>
-          <div class="card" style="margin-bottom:18px"><div class="fx between center"><div class="lb b" style="font-size:13px">Карта •••• 8802</div><div class="lb s">✕</div></div></div>
-          <div class="btn gh sm" style="margin-bottom:20px">ДОБАВИТЬ КАРТУ</div>
+          <div class="card" style="margin-bottom:18px;border-style:dashed"><div class="lb b" style="font-size:12.5px">СБП и сохранение карты</div><div class="lb s" style="margin-top:6px;line-height:1.45">Появятся, если выбранный платёжный провайдер их поддерживает</div></div>
           <div class="fx between center"><div><div class="lb b" style="font-size:13px">Наличными при получении</div><div class="lb s" style="margin-top:4px">Предпочтительный способ</div></div><div class="sw on"></div></div>
           <div class="div" style="margin:18px 0"></div>
           <div class="lb s" style="font-size:10.5px;line-height:1.5">Номера карт хранятся в маскированном виде. Международные карты подключатся в следующем релизе.</div>
@@ -2298,13 +2129,13 @@ body.no-an .an,body.no-an .mk{display:none}
       <i class="mk" style="left:348px;top:420px">2</i>
     </div>
     <ol class="an">
-      <li>Карты РФ с маскированием номера, соответствие PCI DSS, токенизация на стороне шлюза.</li>
+      <li class="q">Состав способов оплаты определяется только после выбора платёжного провайдера: сохранение карты и СБП показываем, лишь если он реально их поддерживает.</li>
       <li>Оплата наличными сохраняется как предпочтительная настройка и подставляется в Checkout.</li>
     </ol>
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 60</b><span>Закрытые предложения · подписка</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 55</b><span>Закрытые предложения · подписка</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Закрытые предложения</div><div class="lb s"></div></div>
@@ -2335,24 +2166,24 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>G · 61</b><span>Конфиденциальность</span><i>390 × 844</i></p>
+    <p class="cap"><b>G · 56</b><span>Конфиденциальность</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Конфиденциальность</div><div class="lb s"></div></div>
         <div class="pad">
-          <div class="fx between center" style="padding:14px 0;border-bottom:1px solid var(--line)"><div style="flex:1;padding-right:14px"><div class="lb" style="font-size:12.5px">Персональные подборки</div><div class="lb s" style="font-size:10.5px;margin-top:3px">Использовать историю просмотров для ленты</div></div><div class="sw on"></div></div>
-          <div class="fx between center" style="padding:14px 0;border-bottom:1px solid var(--line)"><div style="flex:1;padding-right:14px"><div class="lb" style="font-size:12.5px">Доступ менеджера к вишлисту</div><div class="lb s" style="font-size:10.5px;margin-top:3px">Чтобы подбирать вещи точнее</div></div><div class="sw"></div></div>
-          <div class="row">Скачать мои данные <s>›</s></div>
-          <div class="row">Удалить аккаунт <s>›</s></div>
+          <div class="row">Политика конфиденциальности <s>↗</s></div>
+          <div class="row">Согласие на обработку персональных данных <s>↗</s></div>
+          <div class="lb s" style="font-size:10.5px;line-height:1.5;margin-top:14px">Документы открываются на web-странице</div>
           <div class="lb s" style="font-size:10.5px;line-height:1.5;margin-top:18px">Данные шифруются на уровне базы. При передаче обращения сотруднику телефон и e-mail маскируются.</div>
         </div>
       </div></div>
-      <i class="mk" style="left:348px;top:230px">1</i>
-      <i class="mk" style="left:348px;top:360px">2</i>
+      <i class="mk" style="left:348px;top:196px">1</i>
+      <i class="mk" style="left:348px;top:252px">2</i>
     </div>
     <ol class="an">
-      <li>Согласие на доступ сотрудников к вишлисту — отдельный тумблер: ТЗ требует «с согласия клиента», но экрана управления в нём не было.</li>
-      <li>Экспорт данных и запрос на удаление аккаунта — обязательные пункты из требований к приватности.</li>
+      <li>Раздел сокращён по решению разбора: убраны «Скачать мои данные», доступ менеджера к вишлисту и персональные подборки.</li>
+      <li>Остались два документа — политика конфиденциальности и согласие на обработку персональных данных, оба открываются web-страницей. Тексты нужно запросить у клиента.</li>
+      <li>Выход и удаление аккаунта перенесены в профиль.</li>
     </ol>
   </div>
 
@@ -2365,7 +2196,7 @@ body.no-an .an,body.no-an .mk{display:none}
 <div class="wall">
 
   <div class="item">
-    <p class="cap"><b>H · 62</b><span>Услуги · список пакетов</span><i>390 × 844</i></p>
+    <p class="cap"><b>H · 57</b><span>Услуги · список пакетов</span><i>390 × 844</i></p>
     <div class="f" data-tab="home">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Услуги</div><div class="lb s"></div></div>
@@ -2423,7 +2254,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>H · 63</b><span>Услуга · шаблон страницы</span><i>прокручивается</i></p>
+    <p class="cap"><b>H · 58</b><span>Услуга · шаблон страницы</span><i>прокручивается</i></p>
     <div class="f tall">
       <div class="scr"><div class="body">
         <div class="ph" style="height:280px">
@@ -2461,7 +2292,7 @@ body.no-an .an,body.no-an .mk{display:none}
   </div>
 
   <div class="item">
-    <p class="cap"><b>H · 64</b><span>Заявка на услугу</span><i>390 × 844</i></p>
+    <p class="cap"><b>H · 59</b><span>Заявка на услугу</span><i>390 × 844</i></p>
     <div class="f">
       <div class="scr"><div class="body">
         <div class="pad fx between center" style="padding-top:10px;padding-bottom:14px"><div class="lb s">‹</div><div class="lb b">Заявка на услугу</div><div class="lb s"></div></div>
@@ -2504,35 +2335,54 @@ body.no-an .an,body.no-an .mk{display:none}
 
 </div>
 <section class="foot" id="changelog">
-  <h2>Что изменилось в версии 1.2</h2>
+  <h2>Что изменилось в версии 1.3</h2>
+  <p class="b-note" style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin:-6px 0 16px">Источник правок — документ «Разбор экранов для MVP». Где он расходится с протоколом предыдущей встречи, следуем документу как более позднему решению и помечаем расхождение.</p>
   <ul>
-    <li><b>Размеры переработаны как отдельный сценарий.</b> Простого «носит 48 → показываем всё 48» недостаточно: у одного дома клиент берёт 48, у другого 50. Раздел разделён на базовые размеры и индивидуальные по брендам, экраны 55–58. Добавлены подсказка размера в бренде с источником данных (26), контекстный вопрос «размер подошёл?» после примерки (58), изменение размера прямо в корзине (33) и отдельное состояние «нет подходящего размера» (30). Модель хранения оставлена как рабочая гипотеза — по просьбе клиента решение не цементируем.</li>
-    <li><b>Добавлен сценарий консультации до оплаты.</b> Экраны 34–37: запрос консультации с темой, способом связи и удобным временем, подтверждение резерва, состояние корзины с позицией на консультации, решение после разговора — оплатить, изменить размер, продлить резерв или отказаться. Плюс диалог с контекстом товара (47).</li>
-    <li><b>Резервы разведены как две независимые механики.</b> Технический резерв корзины — 15 минут на позицию, бизнес-резерв под консультацию — сутки на обращение. Одновременно два отсчёта не показываются: позиция на консультации выводится отдельной группой со сроком своего резерва, обычная сохраняет корзинный таймер.</li>
-    <li><b>Статусы разведены на две дорожки.</b> Сервисное обращение (консультация) и исполнение заказа живут отдельными блоками в карточке заказа и отдельными типами в истории. В один таймлайн не сливаются.</li>
-    <li><b>Голосовые сообщения в чате</b> — экраны 47 и 48: запись с волной и длительностью, отмена свайпом, воспроизведение в обе стороны.</li>
-    <li><b>Каталог переведён на плоскую модель.</b> Иерархии «категория → подкатегория → тип» не будет: навигация строится из фильтров и подборок по критериям, добавлен экран подборки (16). Карусель на главной переосмыслена как разделы и подборки.</li>
-    <li><b>Связанные товары отрисованы.</b> В карточке появились «Из этой коллекции» и «С этим покупают» — композицию согласовываем сейчас, источник данных помечен вопросом до аудита API.</li>
-    <li><b>Добавлен раздел услуг как шаблон</b> — экраны 62–64: список пакетов, шаблонная страница услуги, заявка с привязкой к вещи. Названия и цены прочерками: структура от контента не зависит.</li>
+    <li><b>Блок доступа переработан.</b> Экран возврата после тайм-аута убран. Вместо него: создание кода приложения 4–6 цифр, предложение подключить Face ID или Touch ID, экран входа в приложение через код или биометрию — экраны 04–06.</li>
+    <li><b>Вход получил «Пропустить»</b> в правом верхнем углу: после пропуска экран не показывается автоматически, авторизацию предлагаем при действии, требующем аккаунта.</li>
+    <li><b>Экран SMS-кода дополнен:</b> ручной ввод и системная автоподстановка, изменение номера, таймер и не более трёх повторных отправок, переход в поддержку с передачей номера.</li>
+    <li><b>Размеры упрощены.</b> Индивидуальные размеры по брендам, подсказка «в этом доме вы берёте 50» и контекстный вопрос после примерки удалены — четыре экрана версии 1.2. Вместо этого клиент отмечает <b>несколько подходящих размеров сразу</b>.</li>
+    <li><b>Офлайн-режим удалён полностью.</b></li>
+    <li><b>Резерв корзины отменён:</b> товар не удерживается, вещь достаётся тому, кто первым завершил покупку. Таймер убран с карточки и из корзины.</li>
+    <li><b>Консультация до оплаты свёрнута.</b> Резерв на 24 часа и запись на звонок в MVP не реализуются, «Связаться с менеджером» = «Написать в чат». Пять экранов версии 1.2 удалены.</li>
+    <li><b>Добавлено управление количеством</b> в корзине и состояние, когда остаток выбран полностью.</li>
+    <li><b>Добавлен флоу адреса и доставки:</b> выбор сохранённого адреса, добавление нового, выбор пункта выдачи. Стоимость и срок рассчитываются только после выбора пункта или адреса.</li>
+    <li><b>Доставка сведена к одному поставщику — СДЭК.</b> VIP-доставка и второй партнёр из прототипа убраны: по договору один интегрируемый поставщик на тип интеграции.</li>
+    <li><b>Сплит-доставка внутри заказа исключена:</b> один заказ — одна служба доставки. На экранах «Заказ оформлен» и «Статус заказа» блок доставки теперь один, а под ним перечислены все вещи заказа с пометкой, что они едут вместе. Запись на примерку вынесена из статуса заказа: это отдельная сущность со своей карточкой в истории.</li>
+    <li><b>Экран оплаты сделан нейтральным.</b> Apple Pay убран, конкретный банк, набор методов, привязка карты и СБП визуально не фиксируются до выбора эквайера.</li>
+    <li><b>Добавлены недостающие шаги примерки:</b> дата, время и слот, подтверждение, состояние успешной записи.</li>
+    <li><b>Добавлен empty-state поиска</b> с консьерж-запросом и подборкой «Для вас». Уточнены последние 3–5 запросов и правила полнотекстового поиска.</li>
+    <li><b>На главную добавлен переключатель «Женское / Мужское»</b> и зафиксированы источники данных по каждому блоку.</li>
+    <li><b>Определение стиля убрано из профиля</b> — остались только любимые бренды.</li>
+    <li><b>Конфиденциальность сокращена:</b> убраны «Скачать мои данные», доступ менеджера к вишлисту и персональные подборки. Остались политика конфиденциальности и согласие на обработку данных — переходом на web-страницу.</li>
+    <li><b>В профиль добавлены «Выйти из аккаунта» и «Удалить аккаунт».</b></li>
+    <li><b>Вишлист только для авторизованных:</b> гость попадает на существующий экран входа с кнопкой «Пропустить», отдельная модалка не делается.</li>
+    <li><b>Пуши только текстовые</b> с переходом на соответствующий экран.</li>
+    <li><b>Чат:</b> зафиксированы три точки входа, исключены предзаданные ответы, автоматические ветки и «Запланировать звонок».</li>
   </ul>
-  <h2 style="margin-top:32px">Рабочие значения, требующие подтверждения</h2>
+  <h2 style="margin-top:32px">Расхождения между документами — нужно решение</h2>
   <ul>
-    <li><b>Резерв под консультацию — 24 часа.</b> Поставлено как рабочее значение, чтобы в кадрах был конкретный текст. Нужны решения: длительность, кто и на сколько продлевает, поведение при истечении, уведомление за час.</li>
-    <li><b>Срок брони в бутике и правило округления цен</b> — висят с предыдущих итераций.</li>
-    <li><b>Механика восстановления доступа и кода-пароля</b> — экраны 07 и 08 нарисованы как предложение.</li>
-    <li><b>Модель индивидуальных размеров</b> — храним размер или поправку к базовому, до какого уровня детализируем категорию, сколько записей на бренд.</li>
-    <li><b>Бизнес-модель закрытого раздела</b> — платно, бесплатно или временно бесплатно.</li>
-    <li><b>Биометрия на подтверждении оплаты</b> — для повторного входа возвращена, по оплате решения нет.</li>
+    <li><b>Резерв корзины.</b> ТЗ требовало удержание на 15 минут, разбор его отменяет. Без удержания вещь может уйти другому покупателю прямо во время оформления.</li>
+    <li><b>Индивидуальные размеры по брендам.</b> Протокол встречи называл их главным результатом, разбор выносит за MVP. Сейчас следуем разбору.</li>
+    <li><b>Консультация до оплаты.</b> Протокол требовал сценарий с резервом и таймингами, разбор снимает и резерв, и запись на звонок.</li>
+    <li><b>VIP-доставка Уффици.</b> Была в ответах заказчика, но в MVP допускается один поставщик на тип интеграции. Если собственная служба остаётся — нужно отдельное решение.</li>
   </ul>
-  <h2 style="margin-top:32px">Ждёт входных данных</h2>
+  <h2 style="margin-top:32px">Не проходило разбор — подтвердить состав</h2>
   <ul>
-    <li><b>Аудит Swagger и API:</b> состав фильтров, источник связанных товаров и коллекций, механика подборок, доступность бренд-размеров.</li>
-    <li><b>RetailCRM:</b> способ интеграции — виджет, стилизованный виджет или собственный фронтенд; поддержка голосовых, вложений, маршрутизации, Telegram и WhatsApp. От этого зависят и стоимость, и кадры чата.</li>
-    <li><b>Mapping ERP-статусов:</b> таблица «внутренний статус → бизнес-смысл → клиентский статус → доступные действия». До неё состав статусов в прототипах предварительный.</li>
-    <li><b>Пакетное описание услуг:</b> структура готова, ждём контент. Часть услуг может потребовать собственного flow вместо шаблона.</li>
-    <li><b>Rule-based логика «Для вас»:</b> приоритет сигналов, глубина истории, поведение при пустой истории.</li>
+    <li><b>Закрытые предложения по подписке</b> — экраны 17–20 и 55. В разборе по Sale написано «вопросов нет», сам закрытый раздел не упомянут.</li>
+    <li><b>Услуги Uffizi</b> — раздел H. В разборе не упоминаются.</li>
+    <li><b>Подборка по критериям, подборка от менеджера, голосовые сообщения</b> — появились после версии, которую разбирала команда.</li>
+    <li><b>Правило округления цен</b> — по-прежнему два варианта.</li>
   </ul>
-  <p class="fin">Версия 1.2. Материал для самостоятельного изучения: обсуждаем композицию, состав элементов и корректность сценариев. Нумерация экранов сквозная, на правки удобно ссылаться номером кадра.</p>
+  <h2 style="margin-top:32px">Открытые вопросы самого разбора</h2>
+  <ul>
+    <li>Резерв товара для примерки остаётся в MVP? Комментарий в документе без ответа.</li>
+    <li>Где задаются подборки — в CRM или в админ-панели?</li>
+    <li>Чем наполнять «Для вас» и «Ваши бренды» для новых пользователей без истории.</li>
+    <li>Есть ли размерные таблицы в системе клиента; если нет — запрашивать ли их добавление.</li>
+    <li>Тексты политики конфиденциальности и согласия на обработку данных.</li>
+  </ul>
+  <p class="fin">Версия 1.3. Нумерация экранов сквозная и изменилась относительно 1.2 — на правки удобно ссылаться номером кадра.</p>
 </section>
 
 <section class="foot">
